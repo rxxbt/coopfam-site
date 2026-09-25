@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 -64 640 640" width="640" height="640" role="img" aria-label="Clear space guide: one eighth of the disc on every side">
+  <rect x="-64" y="-64" width="640" height="640" fill="#FFFFFF"/>
+  <rect x="-64" y="-64" width="640" height="640" fill="none" stroke="#2A8BD1" stroke-width="2" stroke-dasharray="8 6"/>
+  <rect x="0" y="0" width="512" height="512" fill="none" stroke="#2A8BD1" stroke-width="1"/>
+  <circle cx="256" cy="256" r="256" fill="#FFC629"/>
+  <g>
+    <ellipse cx="120" cy="236" rx="26" ry="86" transform="rotate(-46 120 236)" fill="#A8381B"/>
+    <ellipse cx="140" cy="220" rx="26" ry="88" transform="rotate(-22 140 220)" fill="#A8381B"/>
+    <ellipse cx="166" cy="218" rx="24" ry="82" transform="rotate(4 166 218)" fill="#A8381B"/>
+    <ellipse cx="356" cy="400" rx="34" ry="42" fill="#FFF6E3"/>
+    <ellipse cx="248" cy="300" rx="142" ry="98" transform="rotate(-8 248 300)" fill="#A8381B"/>
+    <circle cx="326" cy="306" r="82" fill="#A8381B"/>
+    <ellipse cx="292" cy="352" rx="88" ry="44" fill="#A8381B"/>
+    <line x1="300" y1="262" x2="352" y2="172" stroke="#A8381B" stroke-width="76" stroke-linecap="round"/>
+    <circle cx="356" cy="168" r="54" fill="#A8381B"/>
+    <ellipse cx="232" cy="314" rx="82" ry="44" transform="rotate(-12 232 314)" fill="#7A2711"/>
+    <path d="M318 142 C312 112, 334 96, 346 118 C350 90, 376 90, 380 116 C394 96, 416 112, 402 142 Z" fill="#D8321E"/>
+    <ellipse cx="378" cy="226" rx="12" ry="17" fill="#D8321E"/>
+    <path d="M402 156 L452 170 L402 176 Z" fill="#F5A623"/>
+    <path d="M402 176 L446 176 L402 190 Z" fill="#E9731B"/>
+    <circle cx="374" cy="160" r="8.5" fill="#2B1A10"/>
+    <circle cx="377" cy="157" r="2.8" fill="#FFF6E3"/>
+  </g>
+  <g font-family="Helvetica, Arial, sans-serif" font-size="14" fill="#2A8BD1"><text x="-56" y="-44">clear space = D/8 = 64 units at 512</text><text x="8" y="-8">mark box 512 × 512</text><text x="-56" y="566">minimum size 24 px · token image 512 px</text></g>
+</svg>

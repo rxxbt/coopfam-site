@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1527 512" width="1527" height="512" role="img" aria-label="COOP: hen mark and wordmark">
+  <circle cx="256" cy="256" r="256" fill="#FFC629"/>
+  <g>
+    <ellipse cx="120" cy="236" rx="26" ry="86" transform="rotate(-46 120 236)" fill="#A8381B"/>
+    <ellipse cx="140" cy="220" rx="26" ry="88" transform="rotate(-22 140 220)" fill="#A8381B"/>
+    <ellipse cx="166" cy="218" rx="24" ry="82" transform="rotate(4 166 218)" fill="#A8381B"/>
+    <ellipse cx="356" cy="400" rx="34" ry="42" fill="#FFF6E3"/>
+    <ellipse cx="248" cy="300" rx="142" ry="98" transform="rotate(-8 248 300)" fill="#A8381B"/>
+    <circle cx="326" cy="306" r="82" fill="#A8381B"/>
+    <ellipse cx="292" cy="352" rx="88" ry="44" fill="#A8381B"/>
+    <line x1="300" y1="262" x2="352" y2="172" stroke="#A8381B" stroke-width="76" stroke-linecap="round"/>
+    <circle cx="356" cy="168" r="54" fill="#A8381B"/>
+    <ellipse cx="232" cy="314" rx="82" ry="44" transform="rotate(-12 232 314)" fill="#7A2711"/>
+    <path d="M318 142 C312 112, 334 96, 346 118 C350 90, 376 90, 380 116 C394 96, 416 112, 402 142 Z" fill="#D8321E"/>
+    <ellipse cx="378" cy="226" rx="12" ry="17" fill="#D8321E"/>
+    <path d="M402 156 L452 170 L402 176 Z" fill="#F5A623"/>
+    <path d="M402 176 L446 176 L402 190 Z" fill="#E9731B"/>
+    <circle cx="374" cy="160" r="8.5" fill="#2B1A10"/>
+    <circle cx="377" cy="157" r="2.8" fill="#FFF6E3"/>
+  </g>
+  <g transform="translate(576 141.0) scale(2.3)" stroke="#A8381B" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M76.9,23.1 A38,38 0 1 0 76.9,76.9"/><path transform="translate(104 0)" d="M50,12 C74,12 88,36 88,56 C88,76 72,88 50,88 C28,88 12,76 12,56 C12,36 26,12 50,12 Z" fill="#FFF6E3"/><path transform="translate(218 0)" d="M50,12 C74,12 88,36 88,56 C88,76 72,88 50,88 C28,88 12,76 12,56 C12,36 26,12 50,12 Z" fill="#F2B705"/><path transform="translate(332 0)" d="M12,88 L12,12 L42,12 A24,24 0 0 1 42,60 L12,60"/></g>
+</svg>

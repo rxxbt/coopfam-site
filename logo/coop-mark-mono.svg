@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="COOP hen mark, single colour ink">
+  <g>
+    <ellipse cx="120" cy="236" rx="26" ry="86" transform="rotate(-46 120 236)" fill="#2B1A10"/>
+    <ellipse cx="140" cy="220" rx="26" ry="88" transform="rotate(-22 140 220)" fill="#2B1A10"/>
+    <ellipse cx="166" cy="218" rx="24" ry="82" transform="rotate(4 166 218)" fill="#2B1A10"/>
+    <ellipse cx="248" cy="300" rx="142" ry="98" transform="rotate(-8 248 300)" fill="#2B1A10"/>
+    <circle cx="326" cy="306" r="82" fill="#2B1A10"/>
+    <ellipse cx="292" cy="352" rx="88" ry="44" fill="#2B1A10"/>
+    <line x1="300" y1="262" x2="352" y2="172" stroke="#2B1A10" stroke-width="76" stroke-linecap="round"/>
+    <circle cx="356" cy="168" r="54" fill="#2B1A10"/>
+    <ellipse cx="232" cy="314" rx="82" ry="44" transform="rotate(-12 232 314)" fill="#2B1A10"/>
+    <path d="M318 142 C312 112, 334 96, 346 118 C350 90, 376 90, 380 116 C394 96, 416 112, 402 142 Z" fill="#2B1A10"/>
+    <ellipse cx="378" cy="226" rx="12" ry="17" fill="#2B1A10"/>
+    <path d="M402 156 L452 170 L402 176 Z" fill="#2B1A10"/>
+    <path d="M402 176 L446 176 L402 190 Z" fill="#2B1A10"/>
+    <circle cx="374" cy="160" r="8.5" fill="#FFF6E3"/>
+  </g>
+</svg>
