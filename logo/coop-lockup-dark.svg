@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1527 512" width="1527" height="512" role="img" aria-label="COOP: hen mark and wordmark">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1527 512" width="1527" height="512" role="img" aria-label="COOP lockup for dark backgrounds">
   <circle cx="256" cy="256" r="256" fill="#FFC629"/>
   <g>
     <ellipse cx="120" cy="236" rx="26" ry="86" transform="rotate(-46 120 236)" fill="#A8381B"/>
@@ -18,5 +18,5 @@
     <circle cx="374" cy="160" r="8.5" fill="#2B1A10"/>
     <circle cx="377" cy="157" r="2.8" fill="#FFF6E3"/>
   </g>
-  <g transform="translate(576 141.0) scale(2.3)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" fill="none"><path transform="translate(0 0)" d="M76.9,23.1 A38,38 0 1 0 76.9,76.9" stroke="#A8381B" fill="none"/><path transform="translate(104 0)" d="M50,12 C74,12 88,36 88,56 C88,76 72,88 50,88 C28,88 12,76 12,56 C12,36 26,12 50,12 Z" stroke="#A8381B" fill="#FFF6E3"/><path transform="translate(218 0)" d="M50,12 C74,12 88,36 88,56 C88,76 72,88 50,88 C28,88 12,76 12,56 C12,36 26,12 50,12 Z" stroke="#2B1A10" fill="#F2B705"/><path transform="translate(332 0)" d="M12,88 L12,12 L42,12 A24,24 0 0 1 42,60 L12,60" stroke="#2B1A10" fill="none"/></g>
+  <g transform="translate(576 141.0) scale(2.3)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" fill="none"><path transform="translate(0 0)" d="M76.9,23.1 A38,38 0 1 0 76.9,76.9" stroke="#A8381B" fill="none"/><path transform="translate(104 0)" d="M50,12 C74,12 88,36 88,56 C88,76 72,88 50,88 C28,88 12,76 12,56 C12,36 26,12 50,12 Z" stroke="#A8381B" fill="#FFF6E3"/><path transform="translate(218 0)" d="M50,12 C74,12 88,36 88,56 C88,76 72,88 50,88 C28,88 12,76 12,56 C12,36 26,12 50,12 Z" stroke="#FFF3DC" fill="#F2B705"/><path transform="translate(332 0)" d="M12,88 L12,12 L42,12 A24,24 0 0 1 42,60 L12,60" stroke="#FFF3DC" fill="none"/></g>
 </svg>

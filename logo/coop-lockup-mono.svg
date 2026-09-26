@@ -15,5 +15,5 @@
     <path d="M402 176 L446 176 L402 190 Z" fill="#2B1A10"/>
     <circle cx="374" cy="160" r="8.5" fill="#FFF6E3"/>
   </g>
-  <g transform="translate(576 141.0) scale(2.3)" stroke="#2B1A10" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M76.9,23.1 A38,38 0 1 0 76.9,76.9"/><path transform="translate(104 0)" d="M50,12 C74,12 88,36 88,56 C88,76 72,88 50,88 C28,88 12,76 12,56 C12,36 26,12 50,12 Z" fill="none"/><path transform="translate(218 0)" d="M50,12 C74,12 88,36 88,56 C88,76 72,88 50,88 C28,88 12,76 12,56 C12,36 26,12 50,12 Z" fill="none"/><path transform="translate(332 0)" d="M12,88 L12,12 L42,12 A24,24 0 0 1 42,60 L12,60"/></g>
+  <g transform="translate(576 141.0) scale(2.3)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" fill="none"><path transform="translate(0 0)" d="M76.9,23.1 A38,38 0 1 0 76.9,76.9" stroke="#2B1A10" fill="none"/><path transform="translate(104 0)" d="M50,12 C74,12 88,36 88,56 C88,76 72,88 50,88 C28,88 12,76 12,56 C12,36 26,12 50,12 Z" stroke="#2B1A10" fill="none"/><path transform="translate(218 0)" d="M50,12 C74,12 88,36 88,56 C88,76 72,88 50,88 C28,88 12,76 12,56 C12,36 26,12 50,12 Z" stroke="#2B1A10" fill="none"/><path transform="translate(332 0)" d="M12,88 L12,12 L42,12 A24,24 0 0 1 42,60 L12,60" stroke="#2B1A10" fill="none"/></g>
 </svg>
