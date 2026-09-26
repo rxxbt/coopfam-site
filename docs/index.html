@@ -38,7 +38,7 @@ ol,ul{padding-left:22px}li{margin:4px 0}
 <li><b>Convert.</b> Where a sink pays in another asset, swap through Jupiter; conversions happen first so the token's own tax is paid once, not twice.</li>
 <li><b>Snapshot</b> every holder (Helius DAS), excluding treasury wallets, the operator and program vaults, plus any wallets the dev listed.</li>
 <li><b>Apply the rule</b> and pay: native SOL by transfer, tokens by transfer into the holder's token account. Payouts too small to deliver are carried forward and paid when they add up.</li>
-<li><b>Publish</b> the ledger: snapshot, allocations, amounts and every transaction signature.</li>
+<li><b>Publish</b> the ledger: the snapshot every rule ran on (balances, epochs held, sold-or-not), allocations, amounts, the lottery seed and every transaction signature. Each token page recomputes past epochs from their snapshots and shows the result.</li>
 </ol></div>
 
 <h2>Sinks</h2>
@@ -54,7 +54,7 @@ ol,ul{padding-left:22px}li{margin:4px 0}
 <tr><td>Pro-rata</td><td>Every eligible wallet in proportion to its balance.</td></tr>
 <tr><td>Holding-time weighted</td><td>Weight = balance × epochs held in a row, capped at a number of epochs the dev sets. New buyers start at 1×.</td></tr>
 <tr><td>Never-sold bonus</td><td>A slice of the pot goes only to wallets that never reduced their balance; the rest is pro-rata.</td></tr>
-<tr><td>Balance-weighted lottery</td><td>N wallets drawn by balance weight each epoch, equal shares; the seed is published with the result.</td></tr>
+<tr><td>Balance-weighted lottery</td><td>N wallets drawn by balance weight each epoch, equal shares. The seed is the hash of a Solana block produced after the snapshot, so nobody can know the winners before the snapshot; the seed and the snapshot are published, and anyone can recompute the draw.</td></tr>
 <tr><td>Minimum holding</td><td>Any rule can require a minimum balance; wallets under it are not paid.</td></tr></table>
 <p><b>Refused on purpose:</b> small-holder boosts, flat amounts per wallet, "under X% only" tiers, and rewards for recent buyers. The first three reward splitting one wallet into many; the last rewards wash trading. The rules above are unit-tested against a single invariant: splitting a wallet never raises its payout.</p></div>
 
