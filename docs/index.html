@@ -21,7 +21,7 @@ ol,ul{padding-left:22px}li{margin:4px 0}
 </style>
 </head>
 <body><main>
-<div class="nav"><a href="/"><img src="/logo/coop-512.png" alt="COOP"></a><a href="/">Home</a><a href="/app/">Launch a token</a><a href="/app/#/tokens">Tokens</a><a href="/docs/fees.html">Fee anatomy</a><button class="toggle" type="button" onclick="var r=document.documentElement;var d=(r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme: dark)').matches))?'light':'dark';r.dataset.theme=d;try{localStorage.setItem('coop.theme',d)}catch(e){};dispatchEvent(new Event('coop-theme'))" aria-label="Switch light and dark">Light / dark</button></div>
+<div class="nav"><a href="/"><img src="/logo/coop-512.png" alt="COOP"></a><a href="/">Home</a><a href="/app/">Launch a token</a><a href="/app/#/tokens">Tokens</a><button class="toggle" type="button" onclick="var r=document.documentElement;var d=(r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme: dark)').matches))?'light':'dark';r.dataset.theme=d;try{localStorage.setItem('coop.theme',d)}catch(e){};dispatchEvent(new Event('coop-theme'))" aria-label="Switch light and dark">Light / dark</button></div>
 <h1>How COOP works</h1>
 <p>COOP is a launchpad on Raydium LaunchLab (Solana). The dev launching a token sets three dials that other launchpads hard-code: the transfer tax, what the tax buys, and the rule that pays holders. An engine runs the payouts every epoch and publishes every step. Everything on this page is what the program and the engine actually do; the verified claims with proof links are on the <a href="/#claims">home page</a>.</p>
 
@@ -29,7 +29,7 @@ ol,ul{padding-left:22px}li{margin:4px 0}
 <div class="card"><ol>
 <li><b>Token.</b> Name, symbol, description, image and links. The image and metadata are uploaded through the COOP API and the URI goes into the token's metadata.</li>
 <li><b>Curve.</b> Pick the platform account, which sets the creator curve fee you earn on every curve trade: 0.5%, 0.25% or 0. Quote asset: any of the 560+ mints with a LaunchLab config, searchable in the form (SOL, USDC, gold as GLDx, tokenized stocks, staked SOL, STONK and more); buyers can pay in SOL for any of them, Jupiter routes the swap. Raise target, optional dev buy inside the creation transaction (paid in SOL, swapped to the quote first if needed).</li>
-<li><b>Tax and payouts.</b> Tax 0 to 3.3% (a Token-2022 transfer fee, frozen until graduation), the payout epoch (6, 12 or 24 hours), and up to four sinks with shares that add up to 100%.</li>
+<li><b>Tax and payouts.</b> Tax 0 to 3.3% (a Token-2022 transfer fee; the program locks the rate on the curve and the platform never changes it after), the payout epoch (6, 12 or 24 hours), and up to four sinks with shares that add up to 100%.</li>
 <li><b>Sign.</b> One or two transactions create the token; then your wallet signs the payout manifest as a message. The engine checks the signature and the pool on-chain and runs the first epoch within the hour.</li>
 </ol><p><a class="btn" href="/app/">Open the launch form</a></p></div>
 
@@ -60,8 +60,8 @@ ol,ul{padding-left:22px}li{margin:4px 0}
 <tr><td>Minimum holding</td><td>Any rule can require a minimum balance; wallets under it are not paid.</td></tr></table>
 <p><b>Refused on purpose:</b> small-holder boosts, flat amounts per wallet, "under X% only" tiers, and rewards for recent buyers. The first three reward splitting one wallet into many; the last rewards wash trading. The rules above are unit-tested against a single invariant: splitting a wallet never raises its payout.</p></div>
 
-<h2>Fees</h2>
-<div class="card"><p>On the curve: Raydium's 0.25% plus the creator fee of the account you launched on (0.5%, 0.25% or 0). The platform's curve fee is 0. After graduation the pool runs on tier 9: 1.00% per swap, of which 0.42 is forwarded to the dev and the rest stays with the platform; half of the pool's LP is locked and half burned. The tax is separate from all of this: it applies to every transfer of the token, on the curve and in the pool. Diagrams: <a href="/docs/fees.html">fee anatomy</a>.</p></div>
+<h2 id="fees">Fees</h2>
+<div class="card"><p>On the curve: Raydium's 0.25% plus the creator fee of the account you launched on (0.5%, 0.25% or 0). The platform's curve fee is 0. After graduation the pool runs on tier 9: 1.00% per swap, of which 0.42 is forwarded to the dev and the rest stays with the platform; half of the pool's LP is locked and half burned. The tax is separate from all of this: it applies to every transfer of the token, on the curve and in the pool. Diagrams: .</p></div>
 
 <h2>The ledger and the API</h2>
 <div class="card"><p>Every registered token has a page at <code>coopfam.xyz/app/#/t/&lt;mint&gt;</code>. The same data is public JSON:</p>
