@@ -119,6 +119,10 @@
   .dial p { color: var(--muted); font-size: 15.5px; margin: 0; }
   .dial ul { margin: 8px 0 0; padding-left: 18px; color: var(--muted); font-size: 15px; }
   .dial li { margin: 2px 0; }
+  .ca-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin: 10px 0 14px; }
+  .ca-tag { font-family: var(--display); font-weight: 700; font-size: 14px; background: var(--yolk); color: #2B1A10; border-radius: 6px; padding: 3px 8px; }
+  .ca-row code { font-size: 15px; font-weight: 600; word-break: break-all; background: var(--card); border: 2px solid var(--line); padding: 6px 10px; border-radius: 10px; }
+  .ca-copy { border: 2px solid var(--line); background: transparent; color: inherit; border-radius: 999px; padding: 5px 12px; font: inherit; font-size: 13px; cursor: pointer; }
   .loop { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 26px 0 8px; }
   .loop span { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; background: var(--shell-2); font-family: var(--display); font-weight: 600; font-size: 15px; }
   .loop span i { display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: var(--hen); color: #FFF6E3; font-style: normal; font-size: 12px; }
@@ -238,8 +242,7 @@
         <p class="sub">The cheapest curve on Solana, <b>0% platform fee</b>. Tax, payout asset and holder rules set in one click, so the dev does marketing, not manual burns.</p>
         <div class="cta">
           <a class="btn primary" href="/app/" id="launch">Launch a token</a>
-          <!-- BUILD: StonkFun page for COOP -->
-          <a class="btn secondary" href="#token">About the COOP token</a>
+          <a class="btn secondary" href="#token">COOP is live</a>
         </div>
       </div>
       <figure class="scene" style="margin:0">
@@ -376,15 +379,15 @@
         </div>
         <div>
           <p class="kicker"><svg><use href="#eggicon"/></svg> The COOP token</p>
-          <h2>COOP, the token, launches on StonkFun.</h2>
+          <h2>COOP, the token, is live on StonkFun.</h2>
           <p class="lede">Reward mode, paired with gold (GLDX), with a 3% tax. Every COOP trade buys gold for COOP holders. Golden eggs, literally.</p>
+          <div class="ca-row"><span class="ca-tag">CA</span><code>DSZSngBU2VpMKCQSqMJkS3YvT5jYn2EbKWppZY6rZWmk</code><button type="button" class="ca-copy" onclick="navigator.clipboard.writeText('DSZSngBU2VpMKCQSqMJkS3YvT5jYn2EbKWppZY6rZWmk').then(()=>{this.textContent='copied ✓';setTimeout(()=>this.textContent='copy',1500)})">copy</button></div>
           <ul class="facts">
-            <li><svg><use href="#eggicon"/></svg><span><b>Treasury, not a dump.</b> The dev buy is held as the project treasury under a published never-sell policy. Nobody kills the hen that lays golden eggs.</span></li>
+            <li><svg><use href="#eggicon"/></svg><span><b>Treasury, not a dump.</b> The dev bought 20% at launch and holds it as the project treasury under a published never-sell policy. Nobody kills the hen that lays golden eggs. Watch it: <a href="https://solscan.io/account/CiqdJVB62EQceqoGmJffmtziqRihGmn9VQToAaWWWnpv" target="_blank" rel="noopener">CiqdJV…WWWnpv</a>.</span></li>
             <li><svg><use href="#eggicon"/></svg><span><b>The treasury eats too.</b> It earns its pro-rata share of the gold payouts like any other holder.</span></li>
             <li><svg><use href="#eggicon"/></svg><span><b>Paid in gold.</b> Holders receive GLDX, the gold xStock that tracks the SPDR Gold ETF, in their wallets every epoch.</span></li>
           </ul>
-          <!-- BUILD: StonkFun page for COOP; switch the heading to "is live on StonkFun" at launch -->
-          <p><b>Launch date: to be announced.</b> This section will carry the StonkFun link the day COOP goes live.</p>
+          <p class="cta" style="margin-top:14px"><a class="btn primary" href="https://www.stonkfun.xyz/token/DSZSngBU2VpMKCQSqMJkS3YvT5jYn2EbKWppZY6rZWmk" target="_blank" rel="noopener">Buy COOP on StonkFun</a><a class="btn secondary" href="https://jup.ag/swap/SOL-DSZSngBU2VpMKCQSqMJkS3YvT5jYn2EbKWppZY6rZWmk" target="_blank" rel="noopener">Jupiter</a><a class="btn secondary" href="https://solscan.io/token/DSZSngBU2VpMKCQSqMJkS3YvT5jYn2EbKWppZY6rZWmk" target="_blank" rel="noopener">Solscan</a></p>
         </div>
       </div>
     </section>
@@ -415,14 +418,12 @@
       <p class="kicker"><svg><use href="#eggicon"/></svg> Links</p>
       <h2>Where to find us.</h2>
       <div class="linkrow">
-        <!-- BUILD: X handle -->
-        <a><b>X</b><span>the account opens with the token launch</span></a>
+        <a href="https://x.com/coopfamxyz" rel="noopener" target="_blank"><b>X</b><span>@coopfamxyz</span></a>
         <!-- BUILD: docs index; the fee explainer still shows the earlier DEVON proposal (1% platform fee), refresh before linking as proof -->
         <a href="/docs/"><b>Docs</b><span>fee anatomy, rules, the ledger format</span></a>
         <!-- BUILD: the COOP platform page on Raydium LaunchLab -->
         <a href="https://raydium.io/launchpad/" rel="noopener"><b>Raydium</b><span>LaunchLab, where the curves run</span></a>
-        <!-- BUILD: StonkFun page for COOP -->
-        <a href="https://www.stonkfun.xyz" rel="noopener" target="_blank"><b>StonkFun</b><span>where COOP will launch, paired with gold (GLDX). Not live yet.</span></a>
+        <a href="https://www.stonkfun.xyz/token/DSZSngBU2VpMKCQSqMJkS3YvT5jYn2EbKWppZY6rZWmk" rel="noopener" target="_blank"><b>StonkFun</b><span>where COOP trades, paired with gold (GLDX)</span></a>
       </div>
     </section>
   </div>
