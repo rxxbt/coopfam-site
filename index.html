@@ -111,7 +111,8 @@
 
   /* dials */
   .dials { display: grid; gap: 16px; }
-  @media (min-width: 720px) { .dials { grid-template-columns: repeat(3, 1fr); } }
+  @media (min-width: 720px) { .dials { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1100px) { .dials { grid-template-columns: repeat(4, 1fr); } }
   .dial { background: var(--card); border: 2px solid var(--line); border-radius: 24px; padding: 22px 22px 20px; }
   .dial .n { display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--yolk); color: #2B1A10; font-family: var(--display); font-weight: 700; font-size: 20px; margin-bottom: 12px; }
   .dial h3 { font-weight: 700; font-size: 1.35rem; margin-bottom: 8px; }
@@ -253,7 +254,7 @@
             <ellipse cx="335" cy="408" rx="30" ry="37" fill="#FFF6E3"/>
           </svg>
         </div>
-        <figcaption>The eggs come in the quote asset, gold, staked SOL, or the token itself. The dev decides.</figcaption>
+        <figcaption>Launch against any of 560+ assets. Pay holders in anything Jupiter routes. The dev decides.</figcaption>
       </figure>
     </section>
 
@@ -266,25 +267,28 @@
 
     <section id="how">
       <p class="kicker"><svg><use href="#eggicon"/></svg> How it works</p>
-      <h2>Three dials the dev sets. Other launchpads hard-code them.</h2>
-      <p class="lede">Of the 21 platforms Raydium lists, only StonkFun pays a transfer tax to holders, with one fixed rule. COOP is the second launchpad on LaunchLab whose tokens pay holders, and the first where the dev chooses the rule. It is also the only one where the pair and the payout are two separate choices: quote from 560+ assets, payout in anything Jupiter routes, both picked by name in the launch form. Pair with USDC and pay holders in gold, if that is the story.</p>
+      <h2>Four dials the dev sets. Nobody else hands over all four.</h2>
+      <p class="lede">Pick the pair, set the tax, choose what it buys and who gets paid, all by name in one launch form. The engine runs it every epoch. The curve costs 0.75% all-in with the platform taking nothing, and half of every pool fee deepens the pool forever. Your time goes to the community, not to manual burns.</p>
       <div class="dials">
         <article class="dial">
           <span class="n">1</span>
-          <h3>The tax</h3>
-          <p>0 to 3.3% on every transfer, the dev's choice. StonkFun offers 1% or 3%.</p>
+          <h3>The pair</h3>
+          <p>Any of 560+ quote assets: SOL, USDC, gold, tokenized stocks, staked SOL, memes. Buyers can pay in SOL for any of them; Jupiter routes the swap.</p>
         </article>
         <article class="dial">
           <span class="n">2</span>
-          <h3>What it buys</h3>
-          <p>The quote asset, any token Jupiter can route such as gold, staked SOL, BTC or a stock, found by name in the form, or the token itself. Or burn it outright, since the tax is collected in the token itself. Or send it to the treasury.</p>
+          <h3>The tax</h3>
+          <p>0 to 3.3% on every transfer, in steps of 0.01%. Your number, frozen until graduation.</p>
         </article>
         <article class="dial">
           <span class="n">3</span>
+          <h3>What it buys</h3>
+          <p>Anything Jupiter routes, picked by name: gold, staked SOL, BTC, a stock, the quote, or the token itself. Or burn it. Or fund the treasury. Any split.</p>
+        </article>
+        <article class="dial">
+          <span class="n">4</span>
           <h3>Who gets paid, by which rule</h3>
-          <p>Four vetted rules, plus a minimum-holding threshold that works with any of them:</p>
-          <ul><li>pro-rata</li><li>holding-time weighted</li><li>never-sold bonus</li><li>balance-weighted lottery</li></ul>
-          <p style="margin-top:8px">Rules that reward wallet splitting or wash trading are refused. Splitting a wallet never raises its payout.</p>
+          <p>Pro-rata, holding-time weighted, never-sold bonus or a balance-weighted lottery, each with an optional minimum holding. Splitting a wallet never raises its payout.</p>
         </article>
       </div>
       <div class="loop" aria-label="What the engine does every epoch">
@@ -377,7 +381,7 @@
           <ul class="facts">
             <li><svg><use href="#eggicon"/></svg><span><b>Treasury, not a dump.</b> The dev buy is held as the project treasury under a published never-sell policy. Nobody kills the hen that lays golden eggs.</span></li>
             <li><svg><use href="#eggicon"/></svg><span><b>The treasury eats too.</b> It earns its pro-rata share of the gold payouts like any other holder.</span></li>
-            <li><svg><use href="#eggicon"/></svg><span><b>Paid in gold.</b> Holders receive GLDX, the gold xStock that tracks the SPDR Gold ETF. A payout that holds its value when the meme does not.</span></li>
+            <li><svg><use href="#eggicon"/></svg><span><b>Paid in gold.</b> Holders receive GLDX, the gold xStock that tracks the SPDR Gold ETF, in their wallets every epoch.</span></li>
           </ul>
           <!-- BUILD: StonkFun page for COOP; switch the heading to "is live on StonkFun" at launch -->
           <p><b>Launch date: to be announced.</b> This section will carry the StonkFun link the day COOP goes live.</p>
@@ -387,20 +391,13 @@
 
     <section id="proof">
       <p class="kicker"><svg><use href="#eggicon"/></svg> Proof</p>
-      <h2>The first live payout, on-chain.</h2>
-      <p class="lede">CPSTT, launched through the public form, ran its first payout epoch on 2026-09-26: tax withdrawn, 40% burned, treasury and creator paid in SOL, every step signed.</p>
+      <h2>Live on mainnet, in the open.</h2>
+      <p class="lede">Three platform accounts, a running engine and public ledgers. Every token launched here has a page with its curve, its holders and every payout epoch, down to the transaction signatures.</p>
       <div class="proof2">
         <article class="nest">
-          <h3>First payout epoch</h3>
-          <p class="when">2026-09-26 · CPSTT · mint <a class="mono" href="https://solscan.io/token/96KsBfaJjAa3DLn7E8qhrp8MEMAuj4ogSRxX8W9dDNn5" rel="noopener">96KsBfaJjAa3DLn7E8qhrp8MEMAuj4ogSRxX8W9dDNn5</a></p>
-          <ol class="steps">
-            <li><i>1</i><span>Withdraw the tax</span><a class="sig" href="https://solscan.io/tx/4td8yDZZXkikiY4EgW1XNst5ZebYUyXDK4bzbBfpHmxJHf44mYwYGd3qexcmUURUEJgyVnxTW415yKWvnJ1Ay28y" target="_blank" rel="noopener">4td8yDZZ…</a></li>
-            <li><i>2</i><span>Burn 40%</span><a class="sig" href="https://solscan.io/tx/8upm7vP4xRymaUKV33g8KATxxgkFSxeiPSTG3nQ5LHWLX5AmuSujLYn3akS4gUPs6hvTRoVuGyqQ8LASuCgML2v" target="_blank" rel="noopener">8upm7vP4…</a></li>
-            <li><i>3</i><span>Treasury</span><span class="r"><span class="amt">+0.007173 SOL</span><a class="sig" href="https://solscan.io/tx/2Tybv9o8AjG6mK2G1LDUE48EQvuk5ofoF2dF7rvZi5QyUegXrua8SpwRMg2ySTniXK1a96AJuV49rDA88kVZkhT7" target="_blank" rel="noopener">2Tybv9o8…</a></span></li>
-            <li><i>4</i><span>Creator</span><span class="r"><span class="amt">+0.007169 SOL</span><a class="sig" href="https://solscan.io/tx/6u84Gr4qvJh9ev4Go7znVLy1piMC5RgAezmGsiExAQjSLvEbP6gZiEGVdDYXCah8tN4sD4u4vLshNLZjmg9rDfy" target="_blank" rel="noopener">6u84Gr4q…</a></span></li>
-          </ol>
-          <!-- BUILD: link to the published ledger for this epoch (full signatures live there) -->
-          <p style="margin:16px 0 0"><a class="btn secondary" href="/app/#/t/96KsBfaJjAa3DLn7E8qhrp8MEMAuj4ogSRxX8W9dDNn5">Open the ledger</a></p>
+          <h3>Every launch is public</h3>
+          <p class="when">Curve, holders and every payout epoch, with its transaction signatures, on each token's page.</p>
+          <p style="margin:16px 0 0"><a class="btn secondary" href="/app/#/tokens">See the tokens</a></p>
         </article>
         <article class="nest">
           <h3>Three platform accounts, live on mainnet</h3>
