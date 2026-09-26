@@ -5,20 +5,20 @@
 <script>try{var t=localStorage.getItem("coop.theme");if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>COOP · the launchpad where the dev sets the tax and holders eat</title>
-<meta name="description" content="COOP is a launchpad on Raydium LaunchLab (Solana). The dev sets the transfer tax, what it buys and who gets paid. 0% platform fee on the curve.">
+<meta name="description" content="COOP is the cheapest launchpad on Raydium LaunchLab (Solana): 0% platform fee on the curve, and the dev's fees stay the dev's. Tax, payout asset and holder rules set in one click; half of every pool's liquidity fee deepens the pool.">
 <meta name="theme-color" content="#FFC629">
 <link rel="canonical" href="https://coopfam.xyz/">
 <!-- BUILD: og:image assumes x/banner-1500x500.png is deployed at the site root under x/; adjust the path if the banner lives elsewhere -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://coopfam.xyz/">
 <meta property="og:title" content="COOP · the house takes almost nothing and everyone at the table eats">
-<meta property="og:description" content="A launchpad on Raydium LaunchLab where the dev sets the tax, what it buys and who gets paid. 0% platform fee on the curve.">
+<meta property="og:description" content="The cheapest launchpad on Raydium LaunchLab. 0% platform fee on the curve, tokenomics set in one click, and a pool that deepens with every trade.">
 <meta property="og:image" content="https://coopfam.xyz/x/banner-1500x500.png">
 <meta property="og:image:width" content="1500">
 <meta property="og:image:height" content="500">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="COOP · the house takes almost nothing and everyone at the table eats">
-<meta name="twitter:description" content="A launchpad on Raydium LaunchLab where the dev sets the tax, what it buys and who gets paid. 0% platform fee on the curve.">
+<meta name="twitter:description" content="The cheapest launchpad on Raydium LaunchLab. 0% platform fee on the curve, tokenomics set in one click, and a pool that deepens with every trade.">
 <meta name="twitter:image" content="https://coopfam.xyz/x/banner-1500x500.png">
 <link rel="icon" href="logo/coop-512.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -219,7 +219,7 @@
 <header>
   <div class="wrap nav">
     <a class="brand" href="#top" aria-label="COOP home"><svg class="mark"><use href="#mark"/></svg><svg class="word" viewBox="-2 -2 414 104" role="img" aria-label="COOP"><use href="#word"/></svg></a>
-    <nav class="links" aria-label="Sections"><a href="#how">How it works</a><a href="#claims">Claims</a><a href="#token">COOP token</a><a href="#proof">Proof</a><a href="/app/#/tokens">Tokens</a><a href="/docs/">Docs</a></nav>
+    <nav class="links" aria-label="Sections"><a href="#how">How it works</a><a href="#claims">Why COOP</a><a href="#token">COOP token</a><a href="#proof">Proof</a><a href="/app/#/tokens">Tokens</a><a href="/docs/">Docs</a></nav>
     <div class="navr">
       <button class="toggle" type="button" onclick="var r=document.documentElement;var d=(r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme: dark)').matches))?'light':'dark';r.dataset.theme=d;try{localStorage.setItem('coop.theme',d)}catch(e){};dispatchEvent(new Event('coop-theme'))" aria-label="Switch light and dark">Light / dark</button>
       <!-- BUILD: point "Launch a token" at the launch form once it exists -->
@@ -234,7 +234,7 @@
       <div>
         <p class="eyebrow"><svg><use href="#mark"/></svg> Launchpad on Raydium LaunchLab · Solana</p>
         <h1>The house takes almost nothing and everyone at the table <mark>eats.</mark></h1>
-        <p class="sub">The dev sets the tax, what it buys and who gets paid. The platform takes <b>0% on the curve</b>.</p>
+        <p class="sub">The cheapest curve on Solana, <b>0% platform fee</b>. Tax, payout asset and holder rules set in one click, so the dev does marketing, not manual burns.</p>
         <div class="cta">
           <a class="btn primary" href="/app/" id="launch">Launch a token</a>
           <!-- BUILD: StonkFun page for COOP -->
@@ -258,10 +258,10 @@
     </section>
 
     <section class="carton" aria-label="At a glance" style="padding:14px">
-      <div class="cell"><div class="egg gold"><b>0% platform fee</b><span>on the curve. StonkFun 1%, pump.fun 0.95%, letsbonk 1.25%.</span></div></div>
-      <div class="cell"><div class="egg"><b>Cheapest curve on Solana</b><span>0.75% all-in with the 0.5% creator fee. 0.50% or 0.25% on the other two accounts.</span></div></div>
-      <div class="cell"><div class="egg"><b>Devs paid by the program</b><span>0.5% of every curve trade into the dev's own on-chain vault.</span></div></div>
-      <div class="cell"><div class="egg"><b>Every epoch published</b><span>snapshot, rule output, allocations, transaction signatures.</span></div></div>
+      <div class="cell"><div class="egg gold"><b>Cheapest curve on Solana</b><span>0.75% all-in. StonkFun and pump.fun 1.25%, letsbonk 1.5%.</span></div></div>
+      <div class="cell"><div class="egg"><b>0% platform fee</b><span>on the curve. The dev's 0.5% goes to the dev's own on-chain vault, not to us.</span></div></div>
+      <div class="cell"><div class="egg"><b>Tokenomics in one click</b><span>tax, payout asset, holder rules, treasury, burn. Set at launch, run every epoch.</span></div></div>
+      <div class="cell"><div class="egg"><b>The pool deepens with every trade</b><span>half of every swap's liquidity fee stays in the pool forever, by construction.</span></div></div>
     </section>
 
     <section id="how">
@@ -330,33 +330,33 @@
     </section>
 
     <section id="claims">
-      <p class="kicker"><svg><use href="#eggicon"/></svg> Verified claims</p>
-      <h2>Five things you can check yourself.</h2>
-      <p class="lede">Everything on this page comes from a list of claims verified on-chain or against Raydium's docs and API. These are the five strongest, with where to look.</p>
+      <p class="kicker"><svg><use href="#eggicon"/></svg> Why launch here</p>
+      <h2>Five reasons, all of them on-chain.</h2>
+      <p class="lede">Cheaper than any launchpad on Solana, with the tokenomics options nobody else offers. Each one is readable on-chain or in Raydium's docs.</p>
       <div class="claims">
         <article class="claim">
-          <h3>0% platform fee on the curve.</h3>
-          <p>StonkFun charges 1%, pump.fun 0.95%, letsbonk 1.25%. On COOP the platform's curve fee is zero, readable in the platform account.</p>
+          <h3>The cheapest curve on Solana.</h3>
+          <p>0.75% all-in on a COOP launch, against 1.25% on StonkFun and pump.fun and 1.5% on letsbonk. The platform takes 0%; only Raydium's 0.25% and the dev's own fee remain. Two more accounts bring it to 0.50% or 0.25%.</p>
         </article>
         <article class="claim">
-          <h3>Cheapest curve on Solana.</h3>
-          <p>0.75% all-in with the 0.5% creator fee, 0.50% with 0.25%, 0.25% with 0. Only Raydium's own 0.25% remains. Incumbents: 1.25% (StonkFun, pump.fun), 1.5% (letsbonk).</p>
+          <h3>Your fees stay yours.</h3>
+          <p>We take nothing from the dev. The 0.5% creator fee, the program's cap, accrues to the dev's own on-chain vault and only they can claim it. After graduation, 0.42 of every pool swap's 1.00% is forwarded to the dev.</p>
         </article>
         <article class="claim">
-          <h3>Devs are paid by the program, not by a promise.</h3>
-          <p>The 0.5% creator curve fee, the program's cap, accrues to the dev's own on-chain vault and only they can claim it. After graduation, 1.00% per swap on the pool with 0.42 forwarded to the dev, published per token. StonkFun sets the creator fee to 0 and forwards off-chain; its reward-mode creators get nothing.</p>
+          <h3>Tokenomics in one click.</h3>
+          <p>Tax from 0 to 3.3%. Paid out in the quote asset, gold, staked SOL or the token itself, or burned, or sent to the treasury, in any split. Four holder rules to choose from. Set once at launch, run by the engine every epoch. Other launchpads hard-code one rule or none.</p>
         </article>
         <article class="claim">
-          <h3>Rules that cannot be gamed by splitting wallets.</h3>
-          <p>Pro-rata, holding-time weighted, never-sold bonus, balance-weighted lottery, each with an optional minimum holding. Rules that reward wallet splitting or wash trading are refused. Unit-tested invariant: splitting a wallet never raises its payout.</p>
+          <h3>Rules that cannot be gamed.</h3>
+          <p>Pro-rata, holding-time weighted, never-sold bonus or a balance-weighted lottery, each with an optional minimum holding. Splitting a wallet never raises its payout, and rules that reward wash trading are refused.</p>
           <!-- BUILD: link the rules documentation when it is published -->
         </article>
         <article class="claim">
-          <h3>Every epoch is published.</h3>
-          <p>Snapshot, rule output, allocations and transaction signatures go into a ledger. Claim-mode roots let holders verify their own line.</p>
+          <h3>The pool deepens with every trade.</h3>
+          <p>At graduation half of the LP is burned and half locked, so half of every swap's liquidity fee stays in the pool forever. Liquidity only grows after launch; nobody can pull it.</p>
         </article>
       </div>
-      <p class="muted" style="margin:14px 0 0;padding:16px 22px;border:2px dashed var(--line);border-radius:24px;font-size:15px">Also true, and also on-chain: liquidity is permanent by construction (LaunchLab locks or burns 100% of the graduated LP; on COOP, half locked and half burned) and the mint authority is revoked at creation.</p>
+      <p class="muted" style="margin:14px 0 0;padding:16px 22px;border:2px dashed var(--line);border-radius:24px;font-size:15px">Also true: the mint authority is revoked at creation, and every payout epoch is published as a ledger with its snapshot, allocations and transaction signatures, so anyone can recompute it.</p>
     </section>
 
     <section id="token">
