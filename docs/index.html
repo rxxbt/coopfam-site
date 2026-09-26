@@ -36,7 +36,7 @@ ol,ul{padding-left:22px}li{margin:4px 0}
 <li><b>Sweep.</b> Harvest the withheld tax from token accounts (permissionless) and withdraw it from the mint (the operator key is the withdraw authority).</li>
 <li><b>Split</b> the withdrawn tax across the token's sinks by their shares.</li>
 <li><b>Convert.</b> Where a sink pays in another asset, swap through Jupiter; conversions happen first so the token's own tax is paid once, not twice.</li>
-<li><b>Snapshot</b> every holder (Helius DAS), excluding sink wallets, the operator and program vaults, plus any wallets the dev listed.</li>
+<li><b>Snapshot</b> every holder (Helius DAS), excluding treasury wallets, the operator and program vaults, plus any wallets the dev listed.</li>
 <li><b>Apply the rule</b> and pay: native SOL by transfer, tokens by transfer into the holder's token account. Payouts too small to deliver are carried forward and paid when they add up.</li>
 <li><b>Publish</b> the ledger: snapshot, allocations, amounts and every transaction signature.</li>
 </ol></div>
@@ -47,7 +47,7 @@ ol,ul{padding-left:22px}li{margin:4px 0}
 <tr><td>Treasury</td><td>Converts its share to the quote asset and sends it to a wallet the dev names.</td></tr>
 <tr><td>Creator</td><td>Same, to the dev's wallet.</td></tr>
 <tr><td>Burn</td><td>Burns its share of the token.</td></tr></table>
-<p class="muted">Sink wallets never receive reflections, so a treasury cannot pay itself.</p></div>
+<p class="muted">Treasury wallets never receive reflections, so a treasury cannot farm its own tax; the creator wallet is an ordinary holder.</p></div>
 
 <h2>Rules</h2>
 <div class="card"><table><tr><th>Rule</th><th>Who gets what</th></tr>
