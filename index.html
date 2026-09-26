@@ -237,7 +237,7 @@
         <div class="cta">
           <a class="btn primary" href="/app/" id="launch">Launch a token</a>
           <!-- BUILD: StonkFun page for COOP -->
-          <a class="btn secondary" href="#token">COOP on StonkFun</a>
+          <a class="btn secondary" href="#token">About the COOP token</a>
         </div>
         <p class="fine">Three platform accounts live on mainnet. First live payout on 2026-09-25 · <a href="#proof">see the proof</a></p>
       </div>
@@ -282,8 +282,8 @@
         <article class="dial">
           <span class="n">3</span>
           <h3>Who gets paid, by which rule</h3>
-          <p>Five vetted rules:</p>
-          <ul><li>pro-rata</li><li>holding-time weighted</li><li>never-sold bonus</li><li>balance-weighted lottery</li><li>threshold</li></ul>
+          <p>Four vetted rules, plus a minimum-holding threshold that works with any of them:</p>
+          <ul><li>pro-rata</li><li>holding-time weighted</li><li>never-sold bonus</li><li>balance-weighted lottery</li></ul>
           <p style="margin-top:8px">Rules that reward wallet splitting or wash trading are refused. Splitting a wallet never raises its payout.</p>
         </article>
       </div>
@@ -351,9 +351,9 @@
         </article>
         <article class="claim">
           <h3>Rules that cannot be gamed by splitting wallets.</h3>
-          <p>Pro-rata, holding-time weighted, never-sold bonus, balance-weighted lottery, threshold. Rules that reward wallet splitting or wash trading are refused. Unit-tested invariant: splitting a wallet never raises its payout.</p>
+          <p>Pro-rata, holding-time weighted, never-sold bonus, balance-weighted lottery, each with an optional minimum holding. Rules that reward wallet splitting or wash trading are refused. Unit-tested invariant: splitting a wallet never raises its payout.</p>
           <!-- BUILD: link the rules documentation when it is published -->
-          <p class="proof">Proof: the rules documentation, with the invariant tests.</p>
+          <p class="proof">Proof: <a href="/docs/#rules">the rules documentation</a>; the invariant is unit-tested in the engine.</p>
         </article>
         <article class="claim">
           <h3>Every epoch is published.</h3>
@@ -385,7 +385,7 @@
             <li><svg><use href="#eggicon"/></svg><span><b>Paid in dollars.</b> Holders receive USDC, a payout that does not move with the token or the market.</span></li>
           </ul>
           <!-- BUILD: StonkFun page for COOP; switch the heading to "is live on StonkFun" at launch -->
-          <a class="btn primary" href="#token">COOP on StonkFun</a>
+          <p><b>Launch date: to be announced.</b> This section will carry the StonkFun link the day COOP goes live.</p>
         </div>
       </div>
     </section>
@@ -399,13 +399,13 @@
           <h3>First live payout epoch</h3>
           <p class="when">2026-09-25 · DVTEST · mint <a class="mono" href="https://solscan.io/token/8B8SzdB6DQZkmKUgKtceMatax6Nw7vYexzuUv6ZYoSRX" rel="noopener">8B8SzdB6DQZkmKUgKtceMatax6Nw7vYexzuUv6ZYoSRX</a></p>
           <ol class="steps">
-            <li><i>1</i><span>Withdraw the tax</span><span class="sig">4ikwDHnZ…</span></li>
-            <li><i>2</i><span>Swap</span><span class="sig">Zoe3q3My…</span></li>
-            <li><i>3</i><span>Pay the holder</span><span class="r"><span class="amt">+0.001292 SOL</span><span class="sig">5gHoFPyN…</span></span></li>
-            <li><i>4</i><span>Treasury</span><span class="sig">4JBFpSgR…</span></li>
+            <li><i>1</i><span>Withdraw the tax</span><a class="sig" href="https://solscan.io/tx/4ikwDHnZW3DPUfBsPfzGvPSnkUyAdZ3sU6X2cp4oKbjFpAmnzSh44tG1i59EqnUgLtTKGkS7YkoumRLubmq1thwq" target="_blank" rel="noopener">4ikwDHnZ…</a></li>
+            <li><i>2</i><span>Swap</span><a class="sig" href="https://solscan.io/tx/Zoe3q3MyP7y5ZYEWx7fow4i8CAqTqRCJyBTz7r6txmxX9jozd7G4SsNjiW9KcAP3sB1rFX2MQZ3fKgN3f7uqjEf" target="_blank" rel="noopener">Zoe3q3My…</a></li>
+            <li><i>3</i><span>Pay the holder</span><span class="r"><span class="amt">+0.001292 SOL</span><a class="sig" href="https://solscan.io/tx/5gHoFPyN2nrz2xXy9EmDraipzc5QLzaSXoXaFf6mSbZuWq3yeoda1wiYRuGHuxoQoenfivpSgEd4te3Yhk3TadF6" target="_blank" rel="noopener">5gHoFPyN…</a></span></li>
+            <li><i>4</i><span>Treasury</span><a class="sig" href="https://solscan.io/tx/4JBFpSgR1wG7gLUgy1B8px6fhHWavZzvLUK3BsFoZ671UCnuZLpV6yMTi9nwpNc5XbiKwkXhptqHGi3aZ3cqDRsE" target="_blank" rel="noopener">4JBFpSgR…</a></li>
           </ol>
           <!-- BUILD: link to the published ledger for this epoch (full signatures live there) -->
-          <p style="margin:16px 0 0"><a class="btn secondary" href="#proof">Open the ledger</a></p>
+          <p style="margin:16px 0 0"><a class="btn secondary" href="/app/#/t/8B8SzdB6DQZkmKUgKtceMatax6Nw7vYexzuUv6ZYoSRX">Open the ledger</a></p>
         </article>
         <article class="nest">
           <h3>Three platform accounts, live on mainnet</h3>
@@ -424,13 +424,13 @@
       <h2>Where to find us.</h2>
       <div class="linkrow">
         <!-- BUILD: X handle -->
-        <a href="https://x.com/" rel="noopener"><b>X</b><span>posts, each with on-chain proof</span></a>
+        <a><b>X</b><span>the account opens with the token launch</span></a>
         <!-- BUILD: docs index; the fee explainer still shows the earlier DEVON proposal (1% platform fee), refresh before linking as proof -->
         <a href="/docs/"><b>Docs</b><span>fee anatomy, rules, the ledger format</span></a>
         <!-- BUILD: the COOP platform page on Raydium LaunchLab -->
         <a href="https://raydium.io/launchpad/" rel="noopener"><b>Raydium</b><span>LaunchLab, where the curves run</span></a>
         <!-- BUILD: StonkFun page for COOP -->
-        <a href="#token"><b>StonkFun</b><span>COOP, the token, quoted in USDC</span></a>
+        <a href="https://www.stonkfun.xyz" rel="noopener" target="_blank"><b>StonkFun</b><span>where COOP will launch, quoted in USDC (not live yet)</span></a>
       </div>
     </section>
   </div>

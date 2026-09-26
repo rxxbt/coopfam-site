@@ -1,4 +1,4 @@
-<title>DEVON Fee Anatomy</title>
+<title>COOP Fee Anatomy</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
   :root {
@@ -67,8 +67,8 @@
 </style>
 
 <div class="wrap">
-  <h1>DEVON Fee Anatomy</h1>
-  <p class="lede">Where the money goes on a Raydium LaunchLab platform, in two phases: while a token sits on the bonding curve, and after it graduates into a Raydium pool. Numbers are per 100 units traded, using the settings proposed for DEVON, with StonkFun's settings for comparison.</p>
+  <h1>COOP Fee Anatomy</h1>
+  <p class="lede">Where the money goes on a Raydium LaunchLab platform, in two phases: while a token sits on the bonding curve, and after it graduates into a Raydium pool. Numbers are per 100 units traded, using the settings proposed for COOP, with StonkFun's settings for comparison.</p>
 
   <figure>
     <div class="fig">
@@ -106,7 +106,7 @@
   </figure>
   <div class="legend">
     <span><i style="background: var(--raydium-soft); border-color: var(--raydium)"></i>Raydium (protocol)</span>
-    <span><i style="background: var(--platform-soft); border-color: var(--platform)"></i>Platform (DEVON)</span>
+    <span><i style="background: var(--platform-soft); border-color: var(--platform)"></i>Platform (COOP)</span>
     <span><i style="background: var(--creator-soft); border-color: var(--creator)"></i>Token creator</span>
     <span><i style="background: var(--pool-soft); border-color: var(--pool)"></i>Curve / pool liquidity</span>
   </div>
@@ -114,16 +114,16 @@
   <!-- PART 1 -->
   <section id="part1">
     <h2><span class="num">PART 1</span>Platform fee on curve trades</h2>
-    <p class="onesentence">While a token is on the bonding curve, every buy and sell pays three fees from the quote side, and the platform's own fee is one of them: DEVON proposes 1%, StonkFun charges 1%.</p>
+    <p class="onesentence">While a token is on the bonding curve, every buy and sell pays three fees from the quote side, and the platform's own fee is one of them: COOP proposes 1%, StonkFun charges 1%.</p>
     <figure>
       <div class="fig">
-        <svg viewBox="0 0 800 330" role="img" aria-label="A 100-unit buy on the curve splits into 0.25 to Raydium, 1.00 to the platform, 0.50 to the creator, and 98.25 into the curve on DEVON; on StonkFun the creator gets nothing and 98.75 enters the curve">
+        <svg viewBox="0 0 800 330" role="img" aria-label="A 100-unit buy on the curve splits into 0.25 to Raydium, 1.00 to the platform, 0.50 to the creator, and 98.25 into the curve on COOP; on StonkFun the creator gets nothing and 98.75 enters the curve">
           <defs>
             <marker id="ar1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker>
           </defs>
           <!-- row labels -->
           <g font-size="12" font-weight="600" fill="var(--muted)">
-            <text x="20" y="22">DEVON (proposed)</text>
+            <text x="20" y="22">COOP (proposed)</text>
             <text x="20" y="192">STONKFUN (today)</text>
           </g>
           <!-- Row 1 -->
@@ -183,11 +183,11 @@
       <figcaption>Same 100-unit buy on both platforms. Raydium's 0.25 is fixed by the program config. The platform fee is the platform's own setting, capped at 5%. The only difference between the rows is the creator tap, which StonkFun leaves at zero.</figcaption>
     </figure>
     <div class="takeaways">
-      <strong>What this means for DEVON</strong>
+      <strong>What this means for COOP</strong>
       <ul>
-        <li>Yes: 1% of every curve trade, buys and sells, lands in DEVON's fee vault (one vault per quote asset), claimable by the fee wallet.</li>
+        <li>Yes: 1% of every curve trade, buys and sells, lands in COOP's fee vault (one vault per quote asset), claimable by the fee wallet.</li>
         <li>The cap is 5%, so 1% is a choice, made for parity with StonkFun. It can be changed later by the platform admin.</li>
-        <li>Total drag on a DEVON curve trade would be 1.75% versus StonkFun's 1.25%, entirely because of the creator's 0.5% in part 2.</li>
+        <li>Total drag on a COOP curve trade would be 1.75% versus StonkFun's 1.25%, entirely because of the creator's 0.5% in part 2.</li>
       </ul>
     </div>
   </section>
@@ -195,7 +195,7 @@
   <!-- PART 2 -->
   <section id="part2">
     <h2><span class="num">PART 2</span>Creator fee on curve trades</h2>
-    <p class="onesentence">The token's creator earns this on-chain from every curve trade, the program caps it at 0.5%, and DEVON proposes the full 0.5%. StonkFun sets it to zero.</p>
+    <p class="onesentence">The token's creator earns this on-chain from every curve trade, the program caps it at 0.5%, and COOP proposes the full 0.5%. StonkFun sets it to zero.</p>
     <figure>
       <div class="fig">
         <svg viewBox="0 0 800 300" role="img" aria-label="Three curve trades each drop 0.5 percent into the creator's on-chain vault, which the creator claims into their wallet with one instruction; on StonkFun the vault stays empty and any creator income is an off-chain forward">
@@ -257,14 +257,14 @@
           <text x="20" y="262" font-size="12" fill="var(--muted)">Cap set by the program: 0.5% (5000 in millionths). Raydium's own platform: 0.05%. Bankr, say.fun: 0.5%. StonkFun: 0.</text>
         </svg>
       </div>
-      <figcaption>The vault is the difference. On DEVON the creator's cut is enforced by the program and claimable by the creator alone. On StonkFun nothing accrues on-chain during the curve phase; whatever creators receive is the platform choosing to forward it.</figcaption>
+      <figcaption>The vault is the difference. On COOP the creator's cut is enforced by the program and claimable by the creator alone. On StonkFun nothing accrues on-chain during the curve phase; whatever creators receive is the platform choosing to forward it.</figcaption>
     </figure>
     <div class="takeaways">
-      <strong>What this means for DEVON</strong>
+      <strong>What this means for COOP</strong>
       <ul>
         <li>Yes to both: this is what the token's dev earns while on the curve, and 0.5% is the ceiling the program allows.</li>
         <li>It costs the platform nothing; it comes out of the trade, on top of the platform fee.</li>
-        <li>It is the first concrete thing DEVON can promise creators that StonkFun does not: a fee they can verify on-chain and claim themselves.</li>
+        <li>It is the first concrete thing COOP can promise creators that StonkFun does not: a fee they can verify on-chain and claim themselves.</li>
       </ul>
     </div>
   </section>
@@ -353,10 +353,10 @@
     </div>
     <p class="note">Raydium takes 16% of the trade-fee slice (12% protocol, 4% fund); the creator-fee slice goes whole to the designated wallet. Since both slices end up with the platform, the tier mostly sets the total drag on graduated trading and how much of it Raydium shares.</p>
     <div class="takeaways">
-      <strong>What this means for DEVON</strong>
+      <strong>What this means for COOP</strong>
       <ul>
         <li>Yes, this is why the creator earns 0% on StonkFun's curve and, on-chain, 0% after graduation too: the 1% post-graduation slice is addressed to StonkFun's wallet. Their ~0.5% to standard-mode creators is a forward, and in reward mode they keep it.</li>
-        <li>On DEVON the same 1% lands in DEVON's wallet. Forwarding a share to creators is our policy, enforced by our engine rather than by the program.</li>
+        <li>On COOP the same 1% lands in COOP's wallet. Forwarding a share to creators is our policy, enforced by our engine rather than by the program.</li>
         <li>Index 11 is proposed because traders already know the 1.25% feel from StonkFun; index 16 would give the same revenue with almost nothing left for Raydium.</li>
       </ul>
     </div>
@@ -422,17 +422,17 @@
             <path d="M695,300 L695,322 L330,322 L330,202" stroke-dasharray="5 3" marker-end="url(#ar4)"/>
           </g>
           <text x="345" y="336" font-size="11" fill="var(--muted)">fees nobody can claim stay in the pool and slowly deepen it</text>
-          <text x="20" y="372" font-size="12" fill="var(--muted)">Splits in the wild: StonkFun locks 100% · letsbonk burns 100% · Raydium's own: 10% locked, 90% burned · DEVON proposal: lock 100%</text>
+          <text x="20" y="372" font-size="12" fill="var(--muted)">Splits in the wild: StonkFun locks 100% · letsbonk burns 100% · Raydium's own: 10% locked, 90% burned · COOP proposal: lock 100%</text>
           <text x="20" y="390" font-size="12" fill="var(--muted)">Since 2026-08-17 the "creator" share of the split merges into the platform's locked position; creators get LP fees only if the platform forwards them.</text>
         </svg>
       </div>
       <figcaption>Locking and burning both make the liquidity unwithdrawable. Locking keeps a fee stream for the platform; burning gives that stream to nobody, which is why "LP burned" is optics rather than extra safety.</figcaption>
     </figure>
     <div class="takeaways">
-      <strong>What this means for DEVON</strong>
+      <strong>What this means for COOP</strong>
       <ul>
         <li>Two options only: lock or burn, in any proportion. Both are permanent; "we can do nothing to it" is true of both.</li>
-        <li>Locked LP comes with a fee-key NFT in DEVON's wallet that can claim the trading fees (the 0.21 per 100 in part 3) forever, and can never withdraw the liquidity itself.</li>
+        <li>Locked LP comes with a fee-key NFT in COOP's wallet that can claim the trading fees (the 0.21 per 100 in part 3) forever, and can never withdraw the liquidity itself.</li>
         <li>Lock 100% is proposed because burning only forfeits revenue; the anti-rug guarantee is identical.</li>
       </ul>
     </div>
@@ -442,7 +442,7 @@
     <h2><span class="num">SUMMARY</span>Where 100 units go</h2>
     <div class="tablewrap">
       <table>
-        <thead><tr><th>Phase</th><th>Receiver</th><th class="n">DEVON (proposed)</th><th class="n">StonkFun (today)</th></tr></thead>
+        <thead><tr><th>Phase</th><th>Receiver</th><th class="n">COOP (proposed)</th><th class="n">StonkFun (today)</th></tr></thead>
         <tbody>
           <tr><td rowspan="4">Curve trade</td><td>Raydium protocol</td><td class="n">0.25</td><td class="n">0.25</td></tr>
           <tr><td><span class="tag p">Platform fee vault</span></td><td class="n">1.00</td><td class="n">1.00</td></tr>
@@ -455,6 +455,6 @@
         </tbody>
       </table>
     </div>
-    <p class="note">Any transfer tax on the token itself sits on top of all of this and belongs to the holders' side: on DEVON it is routed by the engine, on StonkFun by their payout bot. All rates verified in Raydium's LaunchLab docs, program IDL and live platform configs, 2026-09-23/24.</p>
+    <p class="note">Any transfer tax on the token itself sits on top of all of this and belongs to the holders' side: on COOP it is routed by the engine, on StonkFun by their payout bot. All rates verified in Raydium's LaunchLab docs, program IDL and live platform configs, 2026-09-23/24.</p>
   </section>
 </div>
