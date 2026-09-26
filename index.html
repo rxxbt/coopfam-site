@@ -5,20 +5,20 @@
 <script>try{var t=localStorage.getItem("coop.theme");if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>COOP · the launchpad where the dev sets the tax and holders eat</title>
-<meta name="description" content="COOP is a launchpad on Raydium LaunchLab (Solana). The dev sets the transfer tax, what it buys and who gets paid. 0% platform fee on the curve. Every payout epoch is published.">
+<meta name="description" content="COOP is a launchpad on Raydium LaunchLab (Solana). The dev sets the transfer tax, what it buys and who gets paid. 0% platform fee on the curve.">
 <meta name="theme-color" content="#FFC629">
 <link rel="canonical" href="https://coopfam.xyz/">
 <!-- BUILD: og:image assumes x/banner-1500x500.png is deployed at the site root under x/; adjust the path if the banner lives elsewhere -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://coopfam.xyz/">
 <meta property="og:title" content="COOP · the house takes almost nothing and everyone at the table eats">
-<meta property="og:description" content="A launchpad on Raydium LaunchLab where the dev sets the tax, what it buys and who gets paid. 0% platform fee on the curve. Every payout epoch is published.">
+<meta property="og:description" content="A launchpad on Raydium LaunchLab where the dev sets the tax, what it buys and who gets paid. 0% platform fee on the curve.">
 <meta property="og:image" content="https://coopfam.xyz/x/banner-1500x500.png">
 <meta property="og:image:width" content="1500">
 <meta property="og:image:height" content="500">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="COOP · the house takes almost nothing and everyone at the table eats">
-<meta name="twitter:description" content="A launchpad on Raydium LaunchLab where the dev sets the tax, what it buys and who gets paid. 0% platform fee on the curve. Every payout epoch is published.">
+<meta name="twitter:description" content="A launchpad on Raydium LaunchLab where the dev sets the tax, what it buys and who gets paid. 0% platform fee on the curve.">
 <meta name="twitter:image" content="https://coopfam.xyz/x/banner-1500x500.png">
 <link rel="icon" href="logo/coop-512.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -234,13 +234,12 @@
       <div>
         <p class="eyebrow"><svg><use href="#mark"/></svg> Launchpad on Raydium LaunchLab · Solana</p>
         <h1>The house takes almost nothing and everyone at the table <mark>eats.</mark></h1>
-        <p class="sub">The dev sets the tax, what it buys and who gets paid. The platform takes <b>0% on the curve</b>. Every payout epoch is published.</p>
+        <p class="sub">The dev sets the tax, what it buys and who gets paid. The platform takes <b>0% on the curve</b>.</p>
         <div class="cta">
           <a class="btn primary" href="/app/" id="launch">Launch a token</a>
           <!-- BUILD: StonkFun page for COOP -->
           <a class="btn secondary" href="#token">About the COOP token</a>
         </div>
-        <p class="fine">Three platform accounts live on mainnet. First live payout on 2026-09-25 · <a href="#proof">see the proof</a></p>
       </div>
       <figure class="scene" style="margin:0">
         <div class="sky">
@@ -338,31 +337,26 @@
         <article class="claim">
           <h3>0% platform fee on the curve.</h3>
           <p>StonkFun charges 1%, pump.fun 0.95%, letsbonk 1.25%. On COOP the platform's curve fee is zero, readable in the platform account.</p>
-          <p class="proof">Proof: <a href="https://solscan.io/account/DEfEVZNPRvQGCpKq19BQ5dpB2hmGVFJ4y1ewPSFz22y5" rel="noopener">the COOP platform account</a> (feeRate 0), and the <a href="https://solscan.io/account/BWk6ALyW2yj1tud1v7Dr4SQzYGprA6na1xRhiv2tZoNG" rel="noopener">0.25</a> and <a href="https://solscan.io/account/Cd3DhizoqEUwMhpHiqF4wcFFocq6QCDZEHU6UvRnJY21" rel="noopener">0</a> accounts.</p>
         </article>
         <article class="claim">
           <h3>Cheapest curve on Solana.</h3>
           <p>0.75% all-in with the 0.5% creator fee, 0.50% with 0.25%, 0.25% with 0. Only Raydium's own 0.25% remains. Incumbents: 1.25% (StonkFun, pump.fun), 1.5% (letsbonk).</p>
-          <p class="proof">Proof: the DVTEST dev buy shows the split on-chain, 0.05 SOL in, 0.049625 to the curve (0.25 Raydium + 0.5 creator + 0 platform). <a href="https://solscan.io/token/8B8SzdB6DQZkmKUgKtceMatax6Nw7vYexzuUv6ZYoSRX" rel="noopener">DVTEST on Solscan</a>.</p>
         </article>
         <article class="claim">
           <h3>Devs are paid by the program, not by a promise.</h3>
           <p>The 0.5% creator curve fee, the program's cap, accrues to the dev's own on-chain vault and only they can claim it. After graduation, 1.00% per swap on the pool with 0.42 forwarded to the dev, published per token. StonkFun sets the creator fee to 0 and forwards off-chain; its reward-mode creators get nothing.</p>
-          <p class="proof">Proof: the creator fee rate in the <a href="https://solscan.io/account/DEfEVZNPRvQGCpKq19BQ5dpB2hmGVFJ4y1ewPSFz22y5" rel="noopener">platform account</a>; per-token dev forwards in the ledger.</p>
         </article>
         <article class="claim">
           <h3>Rules that cannot be gamed by splitting wallets.</h3>
           <p>Pro-rata, holding-time weighted, never-sold bonus, balance-weighted lottery, each with an optional minimum holding. Rules that reward wallet splitting or wash trading are refused. Unit-tested invariant: splitting a wallet never raises its payout.</p>
           <!-- BUILD: link the rules documentation when it is published -->
-          <p class="proof">Proof: <a href="/docs/#rules">the rules documentation</a>; the invariant is unit-tested in the engine.</p>
         </article>
         <article class="claim">
           <h3>Every epoch is published.</h3>
           <p>Snapshot, rule output, allocations and transaction signatures go into a ledger. Claim-mode roots let holders verify their own line.</p>
-          <p class="proof">Proof: <a href="#proof">the first live payout epoch, 2026-09-25</a>, four signatures below.</p>
         </article>
       </div>
-      <p class="muted" style="margin:18px 0 0;font-size:15px;max-width:70ch">Also true, and also on-chain: liquidity is permanent by construction (LaunchLab locks or burns 100% of the graduated LP; on COOP, half locked and half burned) and the mint authority is revoked at creation.</p>
+      <p class="muted" style="margin:14px 0 0;padding:16px 22px;border:2px dashed var(--line);border-radius:24px;font-size:15px">Also true, and also on-chain: liquidity is permanent by construction (LaunchLab locks or burns 100% of the graduated LP; on COOP, half locked and half burned) and the mint authority is revoked at creation.</p>
     </section>
 
     <section id="token">
@@ -381,7 +375,7 @@
           <h2>COOP, the token, launches on StonkFun.</h2>
           <p class="lede">Reward mode, quoted in USDC, with a 3% tax. Every COOP trade pays USDC to COOP holders.</p>
           <ul class="facts">
-            <li><svg><use href="#eggicon"/></svg><span><b>Treasury, not a dump.</b> The dev buy, 20 to 30% of supply, is held as the project treasury under a published never-sell policy.</span></li>
+            <li><svg><use href="#eggicon"/></svg><span><b>Treasury, not a dump.</b> The dev buy is held as the project treasury under a published never-sell policy.</span></li>
             <li><svg><use href="#eggicon"/></svg><span><b>The treasury eats too.</b> It earns its pro-rata share of the USDC payouts like any other holder.</span></li>
             <li><svg><use href="#eggicon"/></svg><span><b>Paid in dollars.</b> Holders receive USDC, a payout that does not move with the token or the market.</span></li>
           </ul>
@@ -394,23 +388,23 @@
     <section id="proof">
       <p class="kicker"><svg><use href="#eggicon"/></svg> Proof</p>
       <h2>The first live payout, on-chain.</h2>
-      <p class="lede">The test token DVTEST ran the whole loop on 2026-09-25: tax swept, converted, a holder paid, the treasury paid, everything signed.</p>
+      <p class="lede">CPSTT, launched through the public form, ran its first payout epoch on 2026-09-26: tax withdrawn, 40% burned, treasury and creator paid in SOL, every step signed.</p>
       <div class="proof2">
         <article class="nest">
-          <h3>First live payout epoch</h3>
-          <p class="when">2026-09-25 · DVTEST · mint <a class="mono" href="https://solscan.io/token/8B8SzdB6DQZkmKUgKtceMatax6Nw7vYexzuUv6ZYoSRX" rel="noopener">8B8SzdB6DQZkmKUgKtceMatax6Nw7vYexzuUv6ZYoSRX</a></p>
+          <h3>First payout epoch</h3>
+          <p class="when">2026-09-26 · CPSTT · mint <a class="mono" href="https://solscan.io/token/96KsBfaJjAa3DLn7E8qhrp8MEMAuj4ogSRxX8W9dDNn5" rel="noopener">96KsBfaJjAa3DLn7E8qhrp8MEMAuj4ogSRxX8W9dDNn5</a></p>
           <ol class="steps">
-            <li><i>1</i><span>Withdraw the tax</span><a class="sig" href="https://solscan.io/tx/4ikwDHnZW3DPUfBsPfzGvPSnkUyAdZ3sU6X2cp4oKbjFpAmnzSh44tG1i59EqnUgLtTKGkS7YkoumRLubmq1thwq" target="_blank" rel="noopener">4ikwDHnZ…</a></li>
-            <li><i>2</i><span>Swap</span><a class="sig" href="https://solscan.io/tx/Zoe3q3MyP7y5ZYEWx7fow4i8CAqTqRCJyBTz7r6txmxX9jozd7G4SsNjiW9KcAP3sB1rFX2MQZ3fKgN3f7uqjEf" target="_blank" rel="noopener">Zoe3q3My…</a></li>
-            <li><i>3</i><span>Pay the holder</span><span class="r"><span class="amt">+0.001292 SOL</span><a class="sig" href="https://solscan.io/tx/5gHoFPyN2nrz2xXy9EmDraipzc5QLzaSXoXaFf6mSbZuWq3yeoda1wiYRuGHuxoQoenfivpSgEd4te3Yhk3TadF6" target="_blank" rel="noopener">5gHoFPyN…</a></span></li>
-            <li><i>4</i><span>Treasury</span><a class="sig" href="https://solscan.io/tx/4JBFpSgR1wG7gLUgy1B8px6fhHWavZzvLUK3BsFoZ671UCnuZLpV6yMTi9nwpNc5XbiKwkXhptqHGi3aZ3cqDRsE" target="_blank" rel="noopener">4JBFpSgR…</a></li>
+            <li><i>1</i><span>Withdraw the tax</span><a class="sig" href="https://solscan.io/tx/4td8yDZZXkikiY4EgW1XNst5ZebYUyXDK4bzbBfpHmxJHf44mYwYGd3qexcmUURUEJgyVnxTW415yKWvnJ1Ay28y" target="_blank" rel="noopener">4td8yDZZ…</a></li>
+            <li><i>2</i><span>Burn 40%</span><a class="sig" href="https://solscan.io/tx/8upm7vP4xRymaUKV33g8KATxxgkFSxeiPSTG3nQ5LHWLX5AmuSujLYn3akS4gUPs6hvTRoVuGyqQ8LASuCgML2v" target="_blank" rel="noopener">8upm7vP4…</a></li>
+            <li><i>3</i><span>Treasury</span><span class="r"><span class="amt">+0.007173 SOL</span><a class="sig" href="https://solscan.io/tx/2Tybv9o8AjG6mK2G1LDUE48EQvuk5ofoF2dF7rvZi5QyUegXrua8SpwRMg2ySTniXK1a96AJuV49rDA88kVZkhT7" target="_blank" rel="noopener">2Tybv9o8…</a></span></li>
+            <li><i>4</i><span>Creator</span><span class="r"><span class="amt">+0.007169 SOL</span><a class="sig" href="https://solscan.io/tx/6u84Gr4qvJh9ev4Go7znVLy1piMC5RgAezmGsiExAQjSLvEbP6gZiEGVdDYXCah8tN4sD4u4vLshNLZjmg9rDfy" target="_blank" rel="noopener">6u84Gr4q…</a></span></li>
           </ol>
           <!-- BUILD: link to the published ledger for this epoch (full signatures live there) -->
-          <p style="margin:16px 0 0"><a class="btn secondary" href="/app/#/t/8B8SzdB6DQZkmKUgKtceMatax6Nw7vYexzuUv6ZYoSRX">Open the ledger</a></p>
+          <p style="margin:16px 0 0"><a class="btn secondary" href="/app/#/t/96KsBfaJjAa3DLn7E8qhrp8MEMAuj4ogSRxX8W9dDNn5">Open the ledger</a></p>
         </article>
         <article class="nest">
           <h3>Three platform accounts, live on mainnet</h3>
-          <p class="when">Renamed on-chain to COOP on 2026-09-25. The platform fee on the curve is 0 on all three; they differ in the creator fee.</p>
+          <p class="when">The platform fee on the curve is 0 on all three; they differ in the creator fee.</p>
           <ul class="accounts">
             <li><b>COOP · creator fee 0.5%</b><a href="https://solscan.io/account/DEfEVZNPRvQGCpKq19BQ5dpB2hmGVFJ4y1ewPSFz22y5" rel="noopener">DEfEVZNPRvQGCpKq19BQ5dpB2hmGVFJ4y1ewPSFz22y5</a></li>
             <li><b>COOP 0.25 · creator fee 0.25%</b><a href="https://solscan.io/account/BWk6ALyW2yj1tud1v7Dr4SQzYGprA6na1xRhiv2tZoNG" rel="noopener">BWk6ALyW2yj1tud1v7Dr4SQzYGprA6na1xRhiv2tZoNG</a></li>
