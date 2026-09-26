@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>try{var t=localStorage.getItem("coop.theme");if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>COOP · the launchpad where the dev sets the tax and holders eat</title>
 <meta name="description" content="COOP is a launchpad on Raydium LaunchLab (Solana). The dev sets the transfer tax, what it buys and who gets paid. 0% platform fee on the curve. Every payout epoch is published.">
@@ -220,7 +221,7 @@
     <a class="brand" href="#top" aria-label="COOP home"><svg class="mark"><use href="#mark"/></svg><svg class="word" viewBox="-2 -2 414 104" role="img" aria-label="COOP"><use href="#word"/></svg></a>
     <nav class="links" aria-label="Sections"><a href="#how">How it works</a><a href="#claims">Claims</a><a href="#token">COOP token</a><a href="#proof">Proof</a><a href="/app/#/tokens">Tokens</a><a href="/docs/">Docs</a></nav>
     <div class="navr">
-      <button class="toggle" type="button" onclick="var r=document.documentElement;r.dataset.theme=(r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme: dark)').matches))?'light':'dark'" aria-label="Switch light and dark">Light / dark</button>
+      <button class="toggle" type="button" onclick="var r=document.documentElement;var d=(r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme: dark)').matches))?'light':'dark';r.dataset.theme=d;try{localStorage.setItem('coop.theme',d)}catch(e){};dispatchEvent(new Event('coop-theme'))" aria-label="Switch light and dark">Light / dark</button>
       <!-- BUILD: point "Launch a token" at the launch form once it exists -->
       <a class="btn primary small" href="/app/">Launch a token</a>
     </div>
