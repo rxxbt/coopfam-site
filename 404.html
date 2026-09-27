@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><title>COOP</title>
 <script>
 (function(){var p=location.pathname;var m=p.match(/^\/app\/(.+?)\/?$/);
-if(m&&!/^(assets|communities|tokens)(\/|$)/.test(m[1])){location.replace("/app/#/"+m[1]+location.search+location.hash);return;}
+if(m&&!/^(assets|communities|tokens)(\/|$)/.test(m[1])){location.replace("/app/"+location.search+"#/"+m[1]);return;}
 if(p==="/app"){location.replace("/app/");return;}
 document.addEventListener("DOMContentLoaded",function(){document.body.style.display="block";});})();
 </script>
