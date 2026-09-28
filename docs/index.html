@@ -39,7 +39,7 @@ ol,ul{padding-left:22px}li{margin:4px 0}
 <li><b>Split</b> the withdrawn tax across the token's sinks by their shares.</li>
 <li><b>Convert.</b> Where a sink pays in another asset, swap through Jupiter; conversions happen first so the token's own tax is paid once, not twice.</li>
 <li><b>Snapshot</b> every holder (Helius DAS), excluding treasury wallets, the operator and program vaults, plus any wallets the dev listed.</li>
-<li><b>Apply the rule</b> and pay: native SOL by transfer, tokens by transfer into the holder's token account. Payouts too small to deliver are carried forward and paid when they add up.</li>
+<li><b>Apply the rule</b> and pay: native SOL by transfer, tokens by transfer into the holder's token account. Payouts too small to deliver (a wallet below the rent minimum, or a first payout under $1 that would need a new token account) go pro-rata to the holders paid that epoch; if nobody can be paid, the pot rolls into the next epoch. Minimum holding is a dollar amount fixed by the dev, $2 or more, priced at snapshot time. </li>
 <li><b>Publish</b> the ledger: the snapshot every rule ran on (balances, epochs held, sold-or-not), allocations, amounts, the lottery seed and every transaction signature. Each token page recomputes past epochs from their snapshots and shows the result.</li>
 </ol></div>
 
