@@ -46,9 +46,9 @@ ol,ul{padding-left:22px}li{margin:4px 0}
 <h2>Sinks</h2>
 <div class="card"><table><tr><th>Sink</th><th>What it does</th></tr>
 <tr><td>Reflections</td><td>Converts its share to the payout asset (the quote asset, any Jupiter-routable asset, or the token itself with no swap) and pays holders under the rule.</td></tr>
-<tr><td>Treasury</td><td>Converts its share to the quote asset and sends it to a wallet the dev names.</td></tr>
+<tr><td>Treasury</td><td>Sends its share to a wallet the dev names: converted to the quote asset (default), converted to any Jupiter-routable asset (gold, USDC, a community's token), or as the token itself.</td></tr>
 <tr><td>Creator</td><td>Same, to the dev's wallet.</td></tr>
-<tr><td>Burn</td><td>Burns its share outright. The tax is collected in the token itself, so no buyback is needed: supply shrinks by exactly that amount, with no swap and no slippage.</td></tr></table>
+<tr><td>Burn</td><td>Burns its share outright (the tax is collected in the token itself, so no buyback is needed: supply shrinks by exactly that amount, with no swap and no slippage), or buys another token with it and burns that: a buyback-and-burn of a community's token, paid for by the tax.</td></tr></table>
 <p class="muted">Treasury wallets never receive reflections, so a treasury cannot farm its own tax; the creator wallet is an ordinary holder.</p></div>
 
 <h2 id="rules">Rules</h2>
