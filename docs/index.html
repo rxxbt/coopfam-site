@@ -54,7 +54,7 @@ ol,ul{padding-left:22px}li{margin:4px 0}
 <h2 id="rules">Rules</h2>
 <div class="card"><table><tr><th>Rule</th><th>Who gets what</th></tr>
 <tr><td>Pro-rata</td><td>Every eligible wallet in proportion to its balance.</td></tr>
-<tr><td>Holding-time weighted</td><td>Weight = balance × epochs held in a row, capped at a number of epochs the dev sets. New buyers start at 1×.</td></tr>
+<tr><td>Holding-time weighted</td><td>Tokens earn a bigger share the longer their wallet holds. The dev sets three dials: the holding interval (6, 12 or 24 hours, its own clock, separate from the payout epoch), the multiplier added per interval (+0.01× to +1×) and the cap (up to 10×). Every token starts at 1×. Selling anything sends the wallet back to 1×. Tokens bought later start at 1× and age on their own clock, so an old wallet earns nothing extra on a fresh buy.</td></tr>
 <tr><td>Never-sold bonus</td><td>A slice of the pot goes only to wallets that never reduced their balance; the rest is pro-rata.</td></tr>
 <tr><td>Balance-weighted lottery</td><td>N wallets drawn by balance weight each epoch, equal shares. The seed is the hash of a Solana block produced after the snapshot, so nobody can know the winners before the snapshot; the seed and the snapshot are published, and anyone can recompute the draw.</td></tr>
 <tr><td>Minimum holding</td><td>Any rule can require a minimum balance; wallets under it are not paid.</td></tr></table>
