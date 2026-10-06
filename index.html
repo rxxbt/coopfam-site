@@ -5,19 +5,19 @@
 <script>try{var t=localStorage.getItem("coop.theme");if(t==="dark"||t==="light")document.documentElement.dataset.theme=t}catch(e){}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>COOP · the launchpad where the dev sets the tax and holders eat</title>
-<meta name="description" content="COOP is the cheapest launchpad on Raydium LaunchLab (Solana): 0% platform fee on the curve, and the dev's fees stay the dev's. Tax, payout asset and holder rules set in one click; half of every pool's liquidity fee deepens the pool.">
+<meta name="description" content="COOP is the cheapest launchpad on Raydium LaunchLab (Solana): 0% platform fee, 590+ pairs, any payout asset, and ten dials the dev sets, three of them nobody else has.">
 <meta name="theme-color" content="#FFC629">
 <link rel="canonical" href="https://coopfam.xyz/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://coopfam.xyz/">
 <meta property="og:title" content="COOP · the house takes almost nothing and everyone at the table eats">
-<meta property="og:description" content="The cheapest launchpad on Raydium LaunchLab. 0% platform fee on the curve, tokenomics set in one click, and a pool that deepens with every trade.">
+<meta property="og:description" content="The cheapest launchpad on Raydium LaunchLab. 0% platform fee, 590+ pairs, any payout asset, ten dials the dev sets.">
 <meta property="og:image" content="https://coopfam.xyz/x/banner-1500x500.png">
 <meta property="og:image:width" content="1500">
 <meta property="og:image:height" content="500">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="COOP · the house takes almost nothing and everyone at the table eats">
-<meta name="twitter:description" content="The cheapest launchpad on Raydium LaunchLab. 0% platform fee on the curve, tokenomics set in one click, and a pool that deepens with every trade.">
+<meta name="twitter:description" content="The cheapest launchpad on Raydium LaunchLab. 0% platform fee, 590+ pairs, any payout asset, ten dials the dev sets.">
 <meta name="twitter:image" content="https://coopfam.xyz/x/banner-1500x500.png">
 <link rel="icon" href="logo/coop-512.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -126,8 +126,7 @@
   .loop span { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; background: var(--shell-2); font-family: var(--display); font-weight: 600; font-size: 15px; }
   .loop span i { display: inline-grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: var(--hen); color: #FFF6E3; font-style: normal; font-size: 12px; }
   .loop em { color: var(--muted); font-style: normal; font-weight: 700; }
-  .fig { background: var(--card); border: 2px solid var(--line); border-radius: 24px; padding: 18px 14px 10px; margin-top: 26px; overflow-x: auto; }
-  .fig svg { display: block; width: 100%; min-width: 560px; height: auto; font-family: var(--body); }
+  .fig { background: var(--card); border: 2px solid var(--line); border-radius: 24px; padding: 18px 14px 10px; margin: 26px 0 0; }
   .fig figcaption { color: var(--muted); font-size: 14px; margin: 8px 6px 4px; max-width: 76ch; }
 
   /* claims */
@@ -177,6 +176,40 @@
   footer .row { display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: center; justify-content: space-between; }
   footer p { max-width: 70ch; margin: 12px 0 0; }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn.primary:hover { transform: none; } }
+
+  /* refresh 2026-10-06 */
+  section { scroll-margin-top: 64px; }
+  .egg b { font-size: 21px; } .egg span { font-size: 13.5px; }
+  .more { display: flex; align-items: center; gap: 12px; margin: 34px 0 14px; }
+  .more .knob { width: 44px; height: 44px; flex: none; }
+  .more h3 { font-weight: 700; font-size: clamp(1.25rem, 2.2vw, 1.6rem); }
+  @media (min-width: 720px) { .dials.six { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 960px) { .dials.six { grid-template-columns: repeat(3, 1fr); } }
+  .tag { display: inline-block; margin: 0 0 0 8px; vertical-align: 3px; font-family: var(--display); font-weight: 600; font-size: 12.5px; letter-spacing: 0.01em; background: var(--yolk); color: #2B1A10; border-radius: 999px; padding: 3px 9px; white-space: nowrap; }
+  .loop em { display: none; } @media (min-width: 560px) { .loop em { display: inline; } }
+  .flow { display: grid; grid-template-columns: auto auto auto auto auto; justify-content: center; align-items: center; gap: 12px; padding: 10px 6px 8px; }
+  .flow .pill { display: grid; justify-items: center; gap: 2px; padding: 12px 22px; border-radius: 999px; border: 2px solid var(--ink); background: var(--shell-2); color: var(--ink); font-family: var(--display); font-weight: 600; font-size: 14px; line-height: 1.1; white-space: nowrap; }
+  .flow .pill b { font-size: 20px; font-weight: 700; }
+  .flow .pill.end { background: var(--yolk); border-color: var(--yolk); color: #2B1A10; }
+  .flow .arrow { display: inline-flex; width: 34px; color: var(--ink); }
+  .flow .arrow svg { width: 100%; height: auto; display: block; }
+  .flow .takes { display: grid; grid-template-columns: repeat(3, auto); gap: 16px; }
+  .flow .take { display: grid; justify-items: center; gap: 2px; color: var(--ink); }
+  .flow .take svg { width: 66px; height: auto; display: block; }
+  .flow .take .who { font-family: var(--display); font-weight: 600; font-size: 14px; color: var(--muted); }
+  @media (max-width: 759px) { .flow { grid-template-columns: 1fr; justify-items: center; gap: 8px; } .flow .arrow { transform: rotate(90deg); } }
+  @media (max-width: 359px) { .flow .take svg { width: 54px; } .flow .takes { gap: 10px; } }
+  @media (min-width: 960px) { .flow { gap: 20px; padding: 16px 6px 10px; } .flow .pill { padding: 14px 28px; font-size: 15px; } .flow .pill b { font-size: 24px; } .flow .arrow { width: 46px; } .flow .takes { gap: 26px; } .flow .take svg { width: 84px; } .flow .take .who { font-size: 15px; } }
+  .stats { display: grid; gap: 12px; grid-template-columns: repeat(2, 1fr); margin: 0 0 12px; }
+  @media (min-width: 720px) { .stats { grid-template-columns: repeat(4, 1fr); gap: 16px; } }
+  .stat { background: var(--card); border: 2px solid var(--line); border-radius: 24px; padding: 18px 20px 16px; }
+  .stat b { display: block; font-family: var(--display); font-weight: 700; font-size: clamp(2rem, 3.6vw, 2.7rem); line-height: 1; letter-spacing: -0.01em; }
+  .stat span { display: block; margin-top: 6px; color: var(--muted); font-size: 14.5px; }
+  .nest .cta { margin-top: 16px; }
+  .dial .top { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-bottom: 12px; }
+  .dial .top .n { margin-bottom: 0; }
+  .dial .top .tag { margin: 0; }
+  .loop { gap: 6px; } .loop span { padding: 7px 12px; font-size: 14.5px; }
 </style>
 </head>
 <body>
@@ -217,13 +250,14 @@
     <circle cx="377" cy="157" r="2.8" fill="#FFF6E3"/></symbol>
     <symbol id="word" viewBox="-2 -2 414 104"><g transform="translate(0 0) scale(1.0)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" fill="none"><path transform="translate(0 0)" d="M76.9,23.1 A38,38 0 1 0 76.9,76.9" stroke="#A8381B" fill="none"/><path transform="translate(104 0)" d="M50,12 C74,12 88,36 88,56 C88,76 72,88 50,88 C28,88 12,76 12,56 C12,36 26,12 50,12 Z" stroke="#A8381B" fill="#FFF6E3"/><path transform="translate(218 0)" d="M50,12 C74,12 88,36 88,56 C88,76 72,88 50,88 C28,88 12,76 12,56 C12,36 26,12 50,12 Z" stroke="var(--ink)" fill="#F2B705"/><path transform="translate(332 0)" d="M12,88 L12,12 L42,12 A24,24 0 0 1 42,60 L12,60" stroke="var(--ink)" fill="none"/></g></symbol>
     <symbol id="eggicon" viewBox="0 0 20 24"><path d="M10 1.5 C15 1.5 18.5 9 18.5 14.5 C18.5 19.5 14.5 22.5 10 22.5 C5.5 22.5 1.5 19.5 1.5 14.5 C1.5 9 5 1.5 10 1.5 Z" fill="#FFC629" stroke="#A8381B" stroke-width="2"/></symbol>
+      <symbol id="dialicon" viewBox="0 0 100 100"><circle cx="50" cy="53" r="46" fill="#E8A400"/><circle cx="50" cy="48" r="46" fill="#FFC629"/><circle cx="50" cy="48" r="31.3" fill="#FFF6E3"/><line x1="24.6" y1="73.4" x2="20.1" y2="77.9" stroke="#2B1A10" stroke-width="2.4" stroke-linecap="round"/><line x1="15.9" y1="59.1" x2="9.8" y2="61.1" stroke="#2B1A10" stroke-width="2.4" stroke-linecap="round"/><line x1="14.6" y1="42.4" x2="8.2" y2="41.4" stroke="#2B1A10" stroke-width="2.4" stroke-linecap="round"/><line x1="21.0" y1="26.9" x2="15.8" y2="23.1" stroke="#2B1A10" stroke-width="2.4" stroke-linecap="round"/><line x1="33.7" y1="16.0" x2="30.8" y2="10.3" stroke="#2B1A10" stroke-width="2.4" stroke-linecap="round"/><line x1="50.0" y1="12.1" x2="50.0" y2="5.7" stroke="#2B1A10" stroke-width="2.4" stroke-linecap="round"/><line x1="66.3" y1="16.0" x2="69.2" y2="10.3" stroke="#2B1A10" stroke-width="2.4" stroke-linecap="round"/><line x1="79.0" y1="26.9" x2="84.2" y2="23.1" stroke="#2B1A10" stroke-width="2.4" stroke-linecap="round"/><line x1="85.4" y1="42.4" x2="91.8" y2="41.4" stroke="#2B1A10" stroke-width="2.4" stroke-linecap="round"/><line x1="84.1" y1="59.1" x2="90.2" y2="61.1" stroke="#2B1A10" stroke-width="2.4" stroke-linecap="round"/><line x1="75.4" y1="73.4" x2="79.9" y2="77.9" stroke="#2B1A10" stroke-width="2.4" stroke-linecap="round"/><line x1="50" y1="48" x2="61.9" y2="25.7" stroke="#A8381B" stroke-width="5.5" stroke-linecap="round"/><circle cx="50" cy="48" r="6" fill="#A8381B"/></symbol>
   </defs>
 </svg>
 
 <header>
   <div class="wrap nav">
     <a class="brand" href="#top" aria-label="COOP home"><svg class="mark"><use href="#mark"/></svg><svg class="word" viewBox="-2 -2 414 104" role="img" aria-label="COOP"><use href="#word"/></svg></a>
-    <nav class="links" aria-label="Sections"><a href="#how">How it works</a><a href="#claims">Why COOP</a><a href="#token">COOP token</a><a href="#proof">Proof</a><a href="/app/#/tokens">Tokens</a><a href="/docs/">Docs</a></nav>
+    <nav class="links" aria-label="Sections"><a href="#how">How it works</a><a href="#claims">Why COOP</a><a href="#proof">Proof</a><a href="#token">COOP token</a><a href="/app/#/tokens">Tokens</a><a href="/docs/">Docs</a></nav>
     <div class="navr">
       <button class="toggle" type="button" onclick="var r=document.documentElement;var d=(r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme: dark)').matches))?'light':'dark';r.dataset.theme=d;try{localStorage.setItem('coop.theme',d)}catch(e){};dispatchEvent(new Event('coop-theme'))" aria-label="Switch light and dark">Light / dark</button>
       <a class="btn primary small" href="/app/">Launch a token</a>
@@ -236,11 +270,11 @@
     <section class="hero" style="padding-top:32px">
       <div>
         <p class="eyebrow"><svg><use href="#mark"/></svg> Launchpad on Raydium LaunchLab · Solana</p>
-        <h1>The house takes almost nothing and everyone at the table <mark>eats.</mark></h1>
-        <p class="sub">The cheapest curve on Solana, <b>0% platform fee</b>. Tax, payout asset and holder rules set in one click, so the dev does marketing, not manual burns.</p>
+        <h1>Launch on Solana with <mark>your own rules.</mark></h1>
+        <p class="sub">The house takes almost nothing and everyone at the table eats. <b>Ten dials</b> the dev sets, <b>590+ pairs</b>, any payout asset, <b>0% platform fee</b>.</p>
         <div class="cta">
           <a class="btn primary" href="/app/" id="launch">Launch a token</a>
-          <a class="btn secondary" href="#token">COOP is live</a>
+          <a class="btn secondary" href="#how">See the dials</a>
         </div>
       </div>
       <figure class="scene" style="margin:0">
@@ -255,36 +289,36 @@
             <ellipse cx="335" cy="408" rx="30" ry="37" fill="#FFF6E3"/>
           </svg>
         </div>
-        <figcaption>Launch against any of 560+ assets. Pay holders in anything Jupiter routes. The dev decides.</figcaption>
+        <figcaption>Launch against any of 590+ assets. Pay holders in anything Jupiter routes. The dev decides.</figcaption>
       </figure>
     </section>
 
     <section class="carton" aria-label="At a glance" style="padding:14px">
-      <div class="cell"><div class="egg gold"><b>Cheapest curve on Solana</b><span>0.75% all-in. StonkFun and pump.fun 1.25%, letsbonk 1.5%.</span></div></div>
-      <div class="cell"><div class="egg"><b>0% platform fee</b><span>on the curve. The dev's 0.5% goes to the dev's own on-chain vault, not to us.</span></div></div>
-      <div class="cell"><div class="egg"><b>Tokenomics in one click</b><span>tax, holder rules, treasury, burn. Quote from 560+ assets, payout in any token Jupiter routes.</span></div></div>
-      <div class="cell"><div class="egg"><b>The pool deepens with every trade</b><span>half of every swap's liquidity fee stays in the pool forever, by construction.</span></div></div>
+      <div class="cell"><div class="egg gold"><b>0% platform fee</b><span>0.75% all-in on the curve, the cheapest on Solana.</span></div></div>
+      <div class="cell"><div class="egg"><b>590+ pairs</b><span>SOL, USDC, gold, stocks, memes. Buyers can pay in SOL for any of them.</span></div></div>
+      <div class="cell"><div class="egg"><b>Any payout asset</b><span>holders paid in whatever Jupiter routes, by the rule you pick.</span></div></div>
+      <div class="cell"><div class="egg"><b>Ten dials</b><span>six of them new, three that nobody else has.</span></div></div>
     </section>
 
     <section id="how">
       <p class="kicker"><svg><use href="#eggicon"/></svg> How it works</p>
-      <h2>Four dials the dev sets. Nobody else hands over all four.</h2>
-      <p class="lede">Pick the pair, set the tax, choose what it buys and who gets paid, all by name in one launch form. The engine runs it every epoch. The curve costs 0.75% all-in with the platform taking nothing, and half of every pool fee deepens the pool forever. Your time goes to the community, not to manual burns.</p>
+      <h2>Ten dials the dev sets. Nobody else hands over this many.</h2>
+      <p class="lede">Pick the pair, the tax, what it buys and who gets paid by which rule. Then any of six more. Signed at launch, run by the engine every epoch, published as a ledger.</p>
       <div class="dials">
         <article class="dial">
           <span class="n">1</span>
           <h3>The pair</h3>
-          <p>Any of 560+ quote assets: SOL, USDC, gold, tokenized stocks, staked SOL, memes. Buyers can pay in SOL for any of them; Jupiter routes the swap.</p>
+          <p>Any of 590+ quote assets: SOL, USDC, gold, tokenized stocks, staked SOL, memes. Buyers can pay in SOL for any of them; Jupiter routes the swap.</p>
         </article>
         <article class="dial">
           <span class="n">2</span>
           <h3>The tax</h3>
-          <p>0 to 5% on every transfer, in steps of 0.01%. Your number: the program locks it on the curve, and the platform never changes it after.</p>
+          <p>0 to 5% on every transfer, in steps of 0.01%. Your number: the program locks it on the curve, and the platform never changes it after. The one token whose rate may change after graduation is $COOP itself.</p>
         </article>
         <article class="dial">
           <span class="n">3</span>
           <h3>What it buys</h3>
-          <p>Anything Jupiter routes, picked by name: gold, staked SOL, BTC, a stock, the quote, or the token itself. Or burn it. Or fund the treasury. Any split.</p>
+          <p>Anything Jupiter routes, picked by name: gold, staked SOL, BTC, a stock, the quote, or the token itself. Or burn it. Or fund the treasury. Any split, up to ten sinks.</p>
         </article>
         <article class="dial">
           <span class="n">4</span>
@@ -292,75 +326,120 @@
           <p>Pro-rata, holding-time weighted, never-sold bonus or a balance-weighted lottery, each with an optional minimum holding. Splitting a wallet never raises its payout.</p>
         </article>
       </div>
-      <div class="loop" aria-label="What the engine does every epoch">
-        <span><i>1</i> sweep the tax</span><em>→</em><span><i>2</i> convert it</span><em>→</em><span><i>3</i> snapshot holders</span><em>→</em><span><i>4</i> apply the rule</span><em>→</em><span><i>5</i> pay</span><em>→</em><span><i>6</i> publish the ledger</span>
+      <div class="more"><svg class="knob" aria-hidden="true"><use href="#dialicon"/></svg><h3>Six more. Off by default, yours at launch.</h3></div>
+      <div class="dials six">
+        <article class="dial">
+          <div class="top"><span class="n">5</span><span class="tag">only on COOP</span></div>
+          <h3>Buy-tax refund</h3>
+          <p>Buyers get their tax back at the next epoch, grossed up so it arrives whole. Only sells pay.</p>
+        </article>
+        <article class="dial">
+          <div class="top"><span class="n">6</span><span class="tag">only on COOP</span></div>
+          <h3>Later recipe</h3>
+          <p>A second split takes over at graduation, at a holder count or at a market cap. Signed before launch, checked every epoch, never reversed.</p>
+        </article>
+        <article class="dial">
+          <span class="n">7</span>
+          <h3>Minimum holding age</h3>
+          <p>Tokens count only after 1 hour to 7 days in the wallet, per lot. A sniper who flips inside the wait feeds the pot.</p>
+        </article>
+        <article class="dial">
+          <span class="n">8</span>
+          <h3>Jackpot</h3>
+          <p>A lottery that draws every N epochs. Between draws the pot piles up, with a countdown on the token page.</p>
+        </article>
+        <article class="dial">
+          <div class="top"><span class="n">9</span><span class="tag">only on COOP</span></div>
+          <h3>Locked team share</h3>
+          <p>A slice locked by Raydium's program at launch, with a cliff and a linear unlock after graduation. You decide whether it earns payouts.</p>
+        </article>
+        <article class="dial">
+          <span class="n">10</span>
+          <h3>Referral share</h3>
+          <p>Up to 1% of every curve trade to whoever brought the buyer, paid by the program. Every visitor of the token page gets a share-and-earn link.</p>
+        </article>
       </div>
-      <p class="muted" style="font-size:15px;max-width:70ch">Every epoch. Payouts too small to deliver go to the other holders paid that epoch. Nothing is rounded away or kept.</p>
+      <div class="loop" aria-label="What the engine does every epoch">
+        <span><i>1</i> sweep the tax</span><em>→</em><span><i>2</i> refund the buys</span><em>→</em><span><i>3</i> convert it</span><em>→</em><span><i>4</i> snapshot holders</span><em>→</em><span><i>5</i> apply the rule</span><em>→</em><span><i>6</i> pay</span><em>→</em><span><i>7</i> publish the ledger</span>
+      </div>
+      <p class="muted" style="font-size:15px;max-width:70ch">Every epoch, hourly if you like. Payouts too small to deliver go to the other holders paid that epoch; a pot too small to convert waits for the next. Nothing is rounded away.</p>
 
       <figure class="fig" style="margin-bottom:0">
-        <svg viewBox="0 0 760 250" role="img" aria-label="A buy of 100 on the curve: 0.25 to Raydium, 0.50 to the dev, 0 to the platform, 99.25 into the curve">
-          <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
-          <g fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="16" y="150" width="128" height="56" rx="28" fill="var(--shell-2)"/>
-            <line x1="144" y1="178" x2="586" y2="178" marker-end="url(#ar)"/>
-            <rect x="590" y="140" width="154" height="76" rx="30" fill="var(--yolk)" stroke="none"/>
-          </g>
-          <g font-size="14" fill="currentColor" font-weight="600" text-anchor="middle">
-            <text x="80" y="174">A buy of</text><text x="80" y="194" font-size="18" font-family="Fredoka, sans-serif" font-weight="700">100</text>
-            <text x="667" y="172" fill="#2B1A10">Into the curve</text><text x="667" y="198" font-size="22" font-family="Fredoka, sans-serif" font-weight="700" fill="#2B1A10">99.25</text>
-          </g>
-          <g fill="none" stroke="currentColor" stroke-width="2">
-            <line x1="240" y1="178" x2="240" y2="126" marker-end="url(#ar)"/>
-            <line x1="380" y1="178" x2="380" y2="126" marker-end="url(#ar)"/>
-            <line x1="520" y1="178" x2="520" y2="126" marker-end="url(#ar)"/>
-          </g>
-          <g font-size="13.5" fill="currentColor" font-weight="700" text-anchor="middle">
-            <text x="240" y="40">Raydium</text><text x="380" y="40">Dev</text><text x="520" y="40">Platform</text>
-          </g>
-          <g stroke="#A8381B" stroke-width="1.2">
-            <path transform="translate(204 46) scale(3)" d="M12 1.5 C17.5 1.5 21.5 9.5 21.5 15 C21.5 20.5 17.5 24 12 24 C6.5 24 2.5 20.5 2.5 15 C2.5 9.5 6.5 1.5 12 1.5 Z" fill="#FFF6E3"/>
-            <path transform="translate(344 46) scale(3)" d="M12 1.5 C17.5 1.5 21.5 9.5 21.5 15 C21.5 20.5 17.5 24 12 24 C6.5 24 2.5 20.5 2.5 15 C2.5 9.5 6.5 1.5 12 1.5 Z" fill="#F2B705"/>
-          </g>
-          <ellipse cx="520" cy="106" rx="44" ry="15" fill="#C99A4B"/>
-          <g fill="none" stroke="#A87A2E" stroke-width="2" stroke-linecap="round"><path d="M484 104 q34 -12 70 -4"/><path d="M490 112 q32 8 60 0"/></g>
-          <g font-family="Fredoka, sans-serif" font-weight="700" font-size="19" text-anchor="middle">
-            <text x="240" y="102" fill="#2B1A10">0.25</text>
-            <text x="380" y="102" fill="#2B1A10">0.50</text>
-            <text x="520" y="84" fill="currentColor">0</text>
-          </g>
-          <text x="16" y="236" font-size="13" fill="var(--muted)">Per 100 traded on the curve with the 0.5% creator account. Fees come off the quote side; on a sell, off the proceeds.</text>
-        </svg>
-        <figcaption>0.75% all-in on the COOP account, 0.50% on COOP 0.25, 0.25% on COOP 0. Only Raydium's own 0.25% remains. After graduation the pool charges 1.00% per swap (tier 9), 0.42 of it forwarded to the dev and published per token, and half of the pool's liquidity fees deepen the pool forever.</figcaption>
+        <div class="flow" role="img" aria-label="A buy of 100 on the curve: 0.25 to Raydium, 0.50 to the dev, 0 to the platform, 99.25 into the curve">
+          <div class="pill start"><span>A buy of</span><b>100</b></div>
+          <span class="arrow" aria-hidden="true"><svg viewBox="0 0 40 24"><path d="M3 12 H34 M26 4 L36 12 L26 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div class="takes">
+            <div class="take"><svg viewBox="0 0 72 88" aria-hidden="true"><path d="M36 4 C52 4 66 30 66 50 C66 68 52 84 36 84 C20 84 6 68 6 50 C6 30 20 4 36 4 Z" fill="#FFF6E3" stroke="#A8381B" stroke-width="3"/><text x="36" y="56" text-anchor="middle" font-family="Fredoka, sans-serif" font-weight="700" font-size="19" fill="#2B1A10">0.25</text></svg><span class="who">Raydium</span></div>
+            <div class="take"><svg viewBox="0 0 72 88" aria-hidden="true"><path d="M36 4 C52 4 66 30 66 50 C66 68 52 84 36 84 C20 84 6 68 6 50 C6 30 20 4 36 4 Z" fill="#F2B705" stroke="#A8381B" stroke-width="3"/><text x="36" y="56" text-anchor="middle" font-family="Fredoka, sans-serif" font-weight="700" font-size="19" fill="#2B1A10">0.50</text></svg><span class="who">Dev</span></div>
+            <div class="take"><svg viewBox="0 0 72 88" aria-hidden="true"><text x="36" y="50" text-anchor="middle" font-family="Fredoka, sans-serif" font-weight="700" font-size="22" fill="currentColor">0</text><ellipse cx="36" cy="70" rx="30" ry="11" fill="#C99A4B"/><path d="M12 68 q24 -9 48 -3 M18 76 q20 6 38 0" fill="none" stroke="#A87A2E" stroke-width="2" stroke-linecap="round"/></svg><span class="who">Platform</span></div>
+          </div>
+          <span class="arrow" aria-hidden="true"><svg viewBox="0 0 40 24"><path d="M3 12 H34 M26 4 L36 12 L26 20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div class="pill end"><span>Into the curve</span><b>99.25</b></div>
+        </div>
+        <figcaption>Per 100 traded on the curve with the 0.5% creator account; fees come off the quote side, on a sell off the proceeds. 0.75% all-in on the COOP account, 0.50% on COOP 0.25, 0.25% on COOP 0. Only Raydium's own 0.25% remains. After graduation the pool charges 1.00% per swap, 0.42 of it forwarded to the dev and published per token, and half of the pool's liquidity fees deepen the pool forever.</figcaption>
       </figure>
     </section>
 
     <section id="claims">
       <p class="kicker"><svg><use href="#eggicon"/></svg> Why launch here</p>
-      <h2>Five reasons, all of them on-chain.</h2>
-      <p class="lede">Cheaper than any launchpad on Solana, with the tokenomics options nobody else offers. Each one is readable on-chain or in Raydium's docs.</p>
+      <h2>Six reasons, all of them on-chain.</h2>
+      <p class="lede">Cheaper than any launchpad on Solana, with options nobody else offers. Each one is readable on-chain or in Raydium's docs.</p>
       <div class="claims">
         <article class="claim">
           <h3>The cheapest curve on Solana.</h3>
-          <p>0.75% all-in on a COOP launch, against 1.25% on StonkFun and pump.fun and 1.5% on letsbonk. The platform takes 0%; only Raydium's 0.25% and the dev's own fee remain. Two more accounts bring it to 0.50% or 0.25%.</p>
+          <p>0.75% all-in, against 1.25% on StonkFun and pump.fun and 1.5% on letsbonk. The platform takes 0%; only Raydium's 0.25% and the dev's own fee remain. Two more accounts bring it to 0.50% or 0.25%.</p>
         </article>
         <article class="claim">
           <h3>Your fees stay yours.</h3>
-          <p>We take nothing from the dev. The 0.5% creator fee, the program's cap, accrues to the dev's own on-chain vault and only they can claim it. After graduation, 0.42 of every pool swap's 1.00% is forwarded to the dev.</p>
+          <p>The 0.5% creator fee accrues to the dev's own on-chain vault, and only they can claim it. After graduation, 0.42 of every pool swap's 1.00% is forwarded to the dev.</p>
         </article>
         <article class="claim">
-          <h3>Tokenomics in one click.</h3>
-          <p>Pair with any of 560+ quote assets, from SOL and USDC to gold and tokenized stocks, and pay holders in any token Jupiter routes, both searchable by name in the form. Tax from 0 to 5%. Paid out in the quote asset, gold, staked SOL or the token itself, or burned, or sent to the treasury, in any split. Four holder rules to choose from. Set once at launch, run by the engine every epoch. Other launchpads hard-code one rule or none.</p>
+          <h3>Any pair, any payout asset.</h3>
+          <p>590+ quote assets and any payout token Jupiter routes, both by name in the form. Tax 0 to 5%. Up to ten sinks: holders, treasury, creator, burn, in any split. Set once, run every epoch.</p>
         </article>
         <article class="claim">
           <h3>Rules that cannot be gamed.</h3>
-          <p>Pro-rata, holding-time weighted, never-sold bonus or a balance-weighted lottery, each with an optional minimum holding. Splitting a wallet never raises its payout, and rules that reward wash trading are refused.</p>
+          <p>Pro-rata, holding-time weighted, never-sold bonus or a balance-weighted lottery, each with a minimum holding and a minimum holding age. Splitting a wallet never raises its payout; rules that reward wash trading are refused.</p>
+        </article>
+        <article class="claim">
+          <h3>Three things nobody else offers.</h3>
+          <p>A buy-tax refund that makes the tax sell-only, a recipe that changes on a signed schedule, and a team share locked by the program at launch.</p>
         </article>
         <article class="claim">
           <h3>The pool deepens with every trade.</h3>
-          <p>At graduation half of the LP is burned and half locked, so half of every swap's liquidity fee stays in the pool forever. Liquidity only grows after launch; nobody can pull it.</p>
+          <p>At graduation half of the LP is burned and half locked, so half of every swap's liquidity fee stays in the pool forever. Nobody can pull it.</p>
         </article>
       </div>
       <p class="muted" style="margin:14px 0 0;padding:16px 22px;border:2px dashed var(--line);border-radius:24px;font-size:15px">Also true: the mint authority is revoked at creation, and every payout epoch is published as a ledger with its snapshot, allocations and transaction signatures, so anyone can recompute it.</p>
+    </section>
+
+    <section id="proof">
+      <p class="kicker"><svg><use href="#eggicon"/></svg> Proof</p>
+      <h2>Live on mainnet, in the open.</h2>
+      <p class="lede">Every token launched here has a page with its curve, its holders and every payout epoch, down to the transaction signatures.</p>
+      <div class="stats" aria-label="Counted by the engine">
+        <div class="stat"><b data-stat="tokens">30</b><span>tokens launched</span></div>
+        <div class="stat"><b data-stat="creators">25</b><span>creator wallets</span></div>
+        <div class="stat"><b data-stat="epochs">2,820</b><span>epochs published</span></div>
+        <div class="stat"><b data-stat="quotes">593</b><span>pairs on the menu</span></div>
+      </div>
+      <p class="muted" style="font-size:14px;margin:0 0 22px" data-stat-when>Counted on 6 October 2026.</p>
+      <div class="proof2">
+        <article class="nest">
+          <h3>Every launch is public</h3>
+          <p class="when">Curve, holders and every payout epoch, with its transaction signatures, on each token's page.</p>
+          <p class="cta"><a class="btn secondary" href="/app/tokens/">All tokens</a><a class="btn secondary" href="/app/communities/">Find your token's page</a></p>
+        </article>
+        <article class="nest">
+          <h3>Three platform accounts, live on mainnet</h3>
+          <p class="when">The platform fee on the curve is 0 on all three; they differ in the creator fee.</p>
+          <ul class="accounts">
+            <li><b>COOP · creator fee 0.5%</b><a href="https://solscan.io/account/DEfEVZNPRvQGCpKq19BQ5dpB2hmGVFJ4y1ewPSFz22y5" rel="noopener">DEfEVZNPRvQGCpKq19BQ5dpB2hmGVFJ4y1ewPSFz22y5</a></li>
+            <li><b>COOP 0.25 · creator fee 0.25%</b><a href="https://solscan.io/account/BWk6ALyW2yj1tud1v7Dr4SQzYGprA6na1xRhiv2tZoNG" rel="noopener">BWk6ALyW2yj1tud1v7Dr4SQzYGprA6na1xRhiv2tZoNG</a></li>
+            <li><b>COOP 0 · creator fee 0</b><a href="https://solscan.io/account/Cd3DhizoqEUwMhpHiqF4wcFFocq6QCDZEHU6UvRnJY21" rel="noopener">Cd3DhizoqEUwMhpHiqF4wcFFocq6QCDZEHU6UvRnJY21</a></li>
+          </ul>
+        </article>
+      </div>
     </section>
 
     <section id="token">
@@ -388,34 +467,13 @@
       </div>
     </section>
 
-    <section id="proof">
-      <p class="kicker"><svg><use href="#eggicon"/></svg> Proof</p>
-      <h2>Live on mainnet, in the open.</h2>
-      <p class="lede">Three platform accounts, a running engine and public ledgers. Every token launched here has a page with its curve, its holders and every payout epoch, down to the transaction signatures.</p>
-      <div class="proof2">
-        <article class="nest">
-          <h3>Every launch is public</h3>
-          <p class="when">Curve, holders and every payout epoch, with its transaction signatures, on each token's page.</p>
-          <p style="margin:16px 0 0"><a class="btn secondary" href="/app/communities/">Find your token's page</a></p>
-        </article>
-        <article class="nest">
-          <h3>Three platform accounts, live on mainnet</h3>
-          <p class="when">The platform fee on the curve is 0 on all three; they differ in the creator fee.</p>
-          <ul class="accounts">
-            <li><b>COOP · creator fee 0.5%</b><a href="https://solscan.io/account/DEfEVZNPRvQGCpKq19BQ5dpB2hmGVFJ4y1ewPSFz22y5" rel="noopener">DEfEVZNPRvQGCpKq19BQ5dpB2hmGVFJ4y1ewPSFz22y5</a></li>
-            <li><b>COOP 0.25 · creator fee 0.25%</b><a href="https://solscan.io/account/BWk6ALyW2yj1tud1v7Dr4SQzYGprA6na1xRhiv2tZoNG" rel="noopener">BWk6ALyW2yj1tud1v7Dr4SQzYGprA6na1xRhiv2tZoNG</a></li>
-            <li><b>COOP 0 · creator fee 0</b><a href="https://solscan.io/account/Cd3DhizoqEUwMhpHiqF4wcFFocq6QCDZEHU6UvRnJY21" rel="noopener">Cd3DhizoqEUwMhpHiqF4wcFFocq6QCDZEHU6UvRnJY21</a></li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
     <section id="links">
       <p class="kicker"><svg><use href="#eggicon"/></svg> Links</p>
       <h2>Where to find us.</h2>
       <div class="linkrow">
         <a href="https://x.com/coopfamxyz" rel="noopener" target="_blank"><b>X</b><span>@coopfamxyz</span></a>
-        <a href="/docs/"><b>Docs</b><span>fee anatomy, rules, the ledger format</span></a>
+        <a href="/docs/"><b>Docs</b><span>fee anatomy, rules, dials, the ledger format</span></a>
+        <a href="https://github.com/rxxbt/coop-engine" rel="noopener" target="_blank"><b>Source</b><span>the engine's code, published for verification</span></a>
         <a href="/app/#/t/2Pk5wVPa8jTm9m9QuNuqFDG98bZB4QJAX49iHu6vetM8"><b>COOP token</b><span>where COOP trades, paired with gold (GLDx)</span></a>
       </div>
     </section>
@@ -431,5 +489,29 @@
     <p>The engine is an operator-run service: the snapshot, the rule and the sends are off-chain code, and every epoch is published as a ledger with its transaction signatures. Raydium's 0.25% on the curve and the pool tier's liquidity fee remain on every trade.</p>
   </div>
 </footer>
+
+<script>
+(function(){
+  // Section links scroll without writing "#how" and friends into the address bar; a link that arrives with one still lands on its section.
+  var strip=function(){ if(location.hash) history.replaceState(null,'',location.pathname+location.search); };
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('a[href^="#"]'); if(!a) return;
+    var id=a.getAttribute('href').slice(1); var el=id==='top'?document.body:document.getElementById(id); if(!el) return;
+    e.preventDefault();
+    if(id==='top') window.scrollTo({top:0,behavior:'smooth'}); else el.scrollIntoView({behavior:'smooth',block:'start'});
+    strip();
+  });
+  var go=function(instant){ var id=location.hash.slice(1); var t=id&&document.getElementById(id); if(t) t.scrollIntoView({block:'start',behavior:instant?'auto':'smooth'}); strip(); };
+  if(location.hash) setTimeout(function(){ go(true); },0);
+  addEventListener('hashchange',function(){ go(true); });
+  // Live counters from the engine; the numbers in the page are the fallback.
+  fetch('https://api.coopfam.xyz/stats').then(function(r){ return r.ok?r.json():null; }).then(function(s){
+    if(!s) return;
+    var f=function(n){ return Number(n).toLocaleString('en-US'); };
+    ['tokens','creators','epochs','quotes'].forEach(function(k){ var el=document.querySelector('[data-stat="'+k+'"]'); if(el&&s[k]!=null) el.textContent=f(s[k]); });
+    var w=document.querySelector('[data-stat-when]'); if(w) w.textContent='Counted by the engine, refreshed every few minutes.';
+  }).catch(function(){});
+})();
+</script>
 </body>
 </html>
